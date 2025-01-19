@@ -22,21 +22,22 @@ git clone
 ## Running the program
 
 Install dependencies:
-`npm install`
+
+```bash
+npm install
+```
 
 Build dependencies:
-`npm run build`
+```bash
+npm run build
+```
 
 To update TailwindCSS dependencies:
-`npm run watch`
+```bash
+npm run watch
+```
 
 ### Guidelines
 
 
-
-### Download dependencies
-
-
-
-## Pipeline
 

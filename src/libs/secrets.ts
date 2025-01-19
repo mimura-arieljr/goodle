@@ -1,3 +1,3 @@
-export const secrets = ["AAAAAAAAAAAAAAAANtjYrjk/der1iNXlP7yejZmH+3KrJjlenQTQ"];
+export const secrets = ["AAAAAAAAAAAAAAAAgPEy5kSN4PBm9eckY2DOPA=="];
 
 export const SECRET_KEY = "goodleIsGood";
