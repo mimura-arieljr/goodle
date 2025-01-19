@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "target": "ES2020",        // Use ES2020 as the target
-    "module": "ESNext",        // Use ESNext for the module system (compatible with modern imports/exports)
-    "outDir": "./dist",        // Compile output directory
-    "rootDir": "./src",        // Source code directory
-    "strict": true,            // Enable strict type checking
-    "esModuleInterop": true,   // Allow compatibility with ES modules
-    "moduleResolution": "node",// Use Node.js module resolution
+    "target": "ES2020", // Use ES2020 as the target
+    "module": "ESNext", // Use ESNext for the module system (compatible with modern imports/exports)
+    "outDir": "./dist", // Compile output directory
+    "rootDir": "./src", // Source code directory
+    "strict": true, // Enable strict type checking
+    "esModuleInterop": true, // Allow compatibility with ES modules
+    "moduleResolution": "node", // Use Node.js module resolution
     "noImplicitAny": true,
     "strictNullChecks": true,
     "noImplicitThis": true,
@@ -18,6 +18,11 @@
     "inlineSourceMap": true,
     "inlineSources": true
   },
-  "include": ["src/**/*"],     // Include all TS files in src/
-  "exclude": ["node_modules"],  // Exclude dependencies
+  "include": [
+    "src/**/*",
+    "src/types/global.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
 }
