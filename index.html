@@ -1,67 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <script type="module" src="./dist/index.js" defer></script>
-    <title>goodle™</title>
-</head>
-
-<body
-    class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 via-gray-dark via-gray to-blue-500 h-screen">
-    <!-- Login Page -->
-    <div id="login-page" class="page flex items-center justify-center h-screen">
-        <div class="p-8 w-96">
-            <h1 class="text-gray-light text-4xl font-bold text-center mb-6 font-anonymouspro animate-slidein">goodle™</h1>
-            <form id="login-form" class="space-y-4">
-                <input type="password" placeholder="Enter Password" id="password"
-                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <div class="flex justify-center">
-                    <button
-                        class="btn w-full bg-orange rounded-lg relative inline-flex items-center justify-start overflow-hidden font-medium transition-all rounded group py-2 px-2.5">
-                        <span
-                            class="w-full h-48 rounded bg-purple-300 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-                        <span
-                            class="relative w-full text-center text-white transition-colors duration-300 ease-in-out group-hover:text-white font-anonymouspro">Continue</span>
-                    </button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./dist/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <script type="module" src="./dist/index.js" defer></script>
+        <title>goodle™</title>
+    </head>
+    <body class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 via-gray-dark via-gray to-blue-500 h-screen">
+        <!-- Show this if JavaScript is disabled -->
+        <noscript>
+            <div class="fixed top-0 left-0 w-full p-4 bg-red text-white text-center font-bold z-50">
+                <p>
+                    <strong>JavaScript is required to view this application. Please enable JavaScript in your browser settings.</strong>
+                </p>
+            </div>
+        </noscript>
+        <!-- Login Page -->
+        <div id="login-page" class="page flex items-center justify-center h-screen">
+            <div class="p-8 w-96">
+                <h1 class="text-gray-light text-4xl font-bold text-center mb-6 font-anonymouspro animate-slidein">goodle™</h1>
+                <form id="login-form" class="space-y-4">
+                    <input
+                        type="password"
+                        placeholder="Enter Password"
+                        id="password"
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    >
+                    <div id="invalid-password" class="hidden flex text-red text-sm font-anonymouspro font-sm mt-1 justify-start">
+                        <span>Invalid Password</span>
+                    </div>
+                    <div class="flex justify-center">
+                        <button class="btn w-full bg-orange rounded-lg relative inline-flex items-center justify-start overflow-hidden font-medium transition-all rounded group py-2 px-2.5">
+                            <span class="w-full h-48 rounded bg-purple-300 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                            <span class="relative w-full text-center text-white transition-colors duration-300 ease-in-out group-hover:text-white font-anonymouspro">Continue</span>
+                        </button>
+                    </div>
+                </form>
+                <div class="flex mt-8">
+                    <span class="text-gray-light font-bold font-anonymouspro text-sm">
+                        Don't have access?
+                        <span class="text-orange">Request Here</span>
+                    </span>
                 </div>
-            </form>
-            <div class="flex mt-8">
-                <span class="text-gray-light font-bold font-anonymouspro text-sm">Don't have access? <span
-                        class="text-orange">Request Here</span></span>
             </div>
         </div>
-    </div>
-
-    <!-- Main Page (Hidden initially) -->
-    <div id="main-page" class="page hidden">
-        <button id="start-btn">Start</button>
-        <button id="settings-btn">Settings</button>
-        <button id="quit-btn">Quit</button>
-    </div>
-
-    <!-- Settings Page (Hidden initially) -->
-    <div id="settings-page" class="page hidden">
-        <h2>Settings</h2>
-        <button id="back-btn">Back</button>
-    </div>
-
-    <!-- Questions Page (Hidden initially) -->
-    <div id="questions-page" class="page hidden">
-        <h2>Questions</h2>
-        <div id="question-container">
-            <!-- Question content will be injected here -->
+        <!-- Main Page (Hidden initially) -->
+        <div id="main-page" class="page hidden">
+            <button id="start-btn">Start</button>
+            <button id="settings-btn">Settings</button>
+            <button id="quit-btn">Quit</button>
         </div>
-        <button id="next-btn">Next</button>
-    </div>
-
-    <!-- <script src="./dist/main.js"></script> -->
-</body>
-
+        <!-- Settings Page (Hidden initially) -->
+        <div id="settings-page" class="page hidden">
+            <h2>Settings</h2>
+            <button id="back-btn">Back</button>
+        </div>
+        <!-- Questions Page (Hidden initially) -->
+        <div id="questions-page" class="page hidden">
+            <h2>Questions</h2>
+            <div id="question-container">
+                <!-- Question content will be injected here --></div>
+            <button id="next-btn">Next</button>
+        </div>
+        <!-- <script src="./dist/main.js"></script> -->
+    </body>
 </html>
