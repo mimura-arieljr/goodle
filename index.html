@@ -22,7 +22,7 @@
         <!-- Login Page -->
         <div id="login-page" class="page flex items-center justify-center h-screen">
             <div class="p-8 w-96">
-                <h1 class="text-gray-light text-4xl font-bold text-center mb-6 font-anonymouspro animate-slidein">goodle™</h1>
+                <h1 class="text-gray-light text-4xl font-bold text-center mb-6 font-anonymouspro">goodle™</h1>
                 <form id="login-form" class="space-y-4">
                     <input
                         type="password"
@@ -49,12 +49,18 @@
             </div>
         </div>
         <!-- Main Page (Hidden initially) -->
-        <div id="main-page" class="page hidden">
-            <button id="start-btn">Start</button>
-            <button id="settings-btn">Settings</button>
-            <button id="quit-btn">Quit</button>
+        <div id="main-page" class="page flex flex-col justify-center items-center p-8 rounded-lg shadow-md hidden">
+            <h1 class="text-orange text-4xl font-bold text-center mb-6 font-anonymouspro">goodle™</h1>
+            <button id="start-btn" class="rounded-md border border-white py-2 px-4 text-center text-sm text-white transition-all bg-transparent hover:bg-orange focus:bg-orange active:bg-orange disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none mb-4 w-full">
+                Start
+            </button>
+            <button id="settings-btn" class="rounded-md border border-white py-2 px-4 text-center text-sm text-white transition-all bg-transparent hover:bg-orange focus:bg-orange active:bg-orange disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none mb-4 w-full">
+                Settings
+            </button>
+            <button id="quit-btn" class="rounded-md border border-white py-2 px-4 text-center text-sm text-white transition-all bg-transparent hover:bg-orange focus:bg-orange active:bg-orange disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none w-full">
+                Quit
+            </button>
         </div>
-   
         <!-- Settings Page (Hidden initially) -->
         <div id="settings-page" class="page hidden">
             <h2>Settings</h2>
