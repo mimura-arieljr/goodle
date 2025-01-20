@@ -618,12 +618,20 @@ video {
   display: none;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .h-48 {
   height: 12rem;
 }
 
 .h-screen {
   height: 100vh;
+}
+
+.w-20 {
+  width: 5rem;
 }
 
 .w-96 {
@@ -642,6 +650,16 @@ video {
 .translate-y-full {
   --tw-translate-y: 100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
 }
 
 .flex-col {
@@ -674,6 +692,10 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -686,9 +708,18 @@ video {
   border-width: 1px;
 }
 
+.border-8 {
+  border-width: 8px;
+}
+
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+}
+
+.border-t-orange {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(255 120 73 / var(--tw-border-opacity, 1));
 }
 
 .bg-orange {
@@ -716,12 +747,6 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-white {
-  --tw-gradient-from: #ffffff var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .via-gray {
   --tw-gradient-to: rgb(132 146 166 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #8492a6 var(--tw-gradient-via-position), var(--tw-gradient-to);
@@ -732,17 +757,8 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), #273444 var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
-.via-purple-300 {
-  --tw-gradient-to: rgb(73 47 120 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #492F78 var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-
 .to-blue-500 {
   --tw-gradient-to: #0F172B var(--tw-gradient-to-position);
-}
-
-.to-green {
-  --tw-gradient-to: #13ce66 var(--tw-gradient-to-position);
 }
 
 .p-3 {

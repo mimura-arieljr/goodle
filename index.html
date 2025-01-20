@@ -11,7 +11,7 @@
         <title>goodle™</title>
     </head>
     <body class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 via-gray-dark via-gray to-blue-500 h-screen">
-        <!-- Show this if JavaScript is disabled -->
+        <!----------------- Show this if JavaScript is disabled ------------------------>
         <noscript>
             <div class="fixed top-0 left-0 w-full p-4 bg-red text-white text-center font-bold z-50">
                 <p>
@@ -19,7 +19,7 @@
                 </p>
             </div>
         </noscript>
-        <!-- Login Page -->
+        <!----------------- Login Page  ------------------------>
         <div id="login-page" class="page flex items-center justify-center h-screen">
             <div class="p-8 w-96">
                 <h1 class="text-gray-light text-4xl font-bold text-center mb-6 font-anonymouspro">goodle™</h1>
@@ -48,7 +48,11 @@
                 </div>
             </div>
         </div>
-        <!-- Main Page (Hidden initially) -->
+
+        <!----------------- Loader ------------------------>
+        <div id="spinner" class="border-white h-20 w-20 animate-spin rounded-full border-8 border-t-orange hidden"></div>
+
+        <!----------------- Main Page ------------------------>
         <div id="main-page" class="page flex flex-col justify-center items-center p-8 rounded-lg shadow-md hidden">
             <h1 class="text-orange text-4xl font-bold text-center mb-6 font-anonymouspro">goodle™</h1>
             <button id="start-btn" class="rounded-md border border-white py-2 px-4 text-center text-sm text-white transition-all bg-transparent hover:bg-orange focus:bg-orange active:bg-orange disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none mb-4 w-full">
@@ -61,12 +65,14 @@
                 Quit
             </button>
         </div>
-        <!-- Settings Page (Hidden initially) -->
+
+        <!----------------- Settings Page ------------------------>
         <div id="settings-page" class="page hidden">
             <h2>Settings</h2>
             <button id="back-btn">Back</button>
         </div>
-        <!-- Questions Page (Hidden initially) -->
+
+        <!----------------- Questions Page ------------------------>
         <div id="questions-page" class="page hidden">
             <h2>Questions</h2>
             <div id="question-container">

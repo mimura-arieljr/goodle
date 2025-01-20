@@ -7,8 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const loginPage = document.getElementById("login-page") as HTMLElement;
     const settingsPage = document.getElementById("settings-page") as HTMLElement;
     const questionsPage = document.getElementById("questions-page") as HTMLElement;
+    const spinner = document.getElementById("spinner") as HTMLElement;
 
     mainView(mainPage, settingsPage, questionsPage);
-    loginView(loginPage, mainPage);
+    loginView(loginPage, mainPage, spinner);
     settingsView(settingsPage, mainPage);
 });

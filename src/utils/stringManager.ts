@@ -14,7 +14,7 @@ const getKey = async () => {
     const derivedKey = await crypto.subtle.deriveKey(
         {
             name: "PBKDF2",
-            salt: new TextEncoder().encode("some-salt"), // You should use a unique salt for each user
+            salt: new TextEncoder().encode("saltandpepper"), // TODO: Use a unique salt for each user
             iterations: 100000, // Increase iterations for better security
             hash: "SHA-256",
         },

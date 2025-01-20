@@ -49,6 +49,7 @@ module.exports = {
     },
     animation: {
       slidein: "slidein 1s ease 300ms",
+      spin: 'spin 1s linear infinite',
     },
   },
   plugins: [],
