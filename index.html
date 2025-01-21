@@ -48,12 +48,10 @@
                 </div>
             </div>
         </div>
-
         <!----------------- Loader ------------------------>
         <div id="spinner" class="border-white h-20 w-20 animate-spin rounded-full border-8 border-t-orange hidden"></div>
-
         <!----------------- Main Page ------------------------>
-        <div id="main-page" class="page flex flex-col justify-center items-center p-8 rounded-lg shadow-md hidden">
+        <div id="main-page" class="page flex flex-col justify-center items-center p-8 hidden">
             <h1 class="text-orange text-4xl font-bold text-center mb-6 font-anonymouspro">goodle™</h1>
             <button id="start-btn" class="rounded-md border border-white py-2 px-4 text-center text-sm text-white transition-all bg-transparent hover:bg-orange focus:bg-orange active:bg-orange disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none mb-4 w-full">
                 Start
@@ -65,13 +63,59 @@
                 Quit
             </button>
         </div>
-
         <!----------------- Settings Page ------------------------>
-        <div id="settings-page" class="page hidden">
-            <h2>Settings</h2>
-            <button id="back-btn">Back</button>
+        <div id="settings-page" class="page flex items-center justify-center h-screen hidden">
+            <!-- Left Section -->
+            <div class="flex-1 p-8">
+                <h1 class="text-orange text-4xl mb-6 font-anonymouspro">what do you want to do?</h1>
+            </div>
+            <!-- Right Section (Settings Form) -->
+            <div class="flex-1 p-8">
+                <form id="settings-form" class="space-y-6">
+                    <!-- Enable/Disable Scoring -->
+                    <div class="flex items-center space-x-3">
+                        <input type="checkbox" id="enable-scoring" class="w-5 h-5 border rounded focus:ring-2 focus:ring-blue-300">
+                        <label for="enable-scoring" class="text-gray-light font-anonymouspro">Enable Scoring</label>
+                    </div>
+                    <!-- Timer per Question -->
+                    <div class="flex flex-col">
+                        <label for="timer" class="text-gray-light font-anonymouspro mb-2">Desired Time per Question</label>
+                        <input
+                            type="number"
+                            id="timer"
+                            placeholder="seconds"
+                            class="w-full p-3 rounded-lg bg-blue-150 border border-gray-light text-gray-light placeholder-gray-light focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            max="120"
+                            min="0"
+                        >
+                    </div>
+                    <!-- Number of Questions -->
+                    <div class="flex flex-col">
+                        <label for="num-questions" class="text-gray-light font-anonymouspro mb-2">Number of Questions</label>
+                        <input
+                            type="number"
+                            id="num-questions"
+                            placeholder="Minimum: 10"
+                            class="w-full p-3 rounded-lg bg-blue-150 border border-gray-light text-gray-light placeholder-gray-light focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            min="10"
+                        >
+                    </div>
+                    <!-- Back Button -->
+                    <div class="flex items-center justify-end">
+                        <button id="back-btn" class="flex items-center text-gray-light font-anonymouspro space-x-2">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                            >
+                                <path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 111.414 1.414L5.414 10H15a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
-
         <!----------------- Questions Page ------------------------>
         <div id="questions-page" class="page hidden">
             <h2>Questions</h2>
