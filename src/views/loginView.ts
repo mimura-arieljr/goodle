@@ -10,7 +10,6 @@ export function loginView(loginPage: HTMLElement, mainPage: HTMLElement, spinner
 
         const passwordInput = (document.getElementById("password") as HTMLInputElement)?.value;
         const encryptedInput = await encryptText(passwordInput)
-        console.log(encryptedInput)
         
         if (secrets[0] !== encryptedInput) {
             invalidPassword.classList.remove("hidden");
@@ -22,7 +21,6 @@ export function loginView(loginPage: HTMLElement, mainPage: HTMLElement, spinner
         setTimeout(() => {
             spinner.classList.add("hidden");
             mainPage.classList.remove("hidden");
-            console.log(imitateLoadTime())
         }, imitateLoadTime());
        
     });
