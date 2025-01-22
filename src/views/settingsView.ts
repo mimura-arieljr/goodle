@@ -1,6 +1,6 @@
 export function settingsView(settingsPage: HTMLElement, mainPage: HTMLElement) {
     const settingsBtn = document.getElementById("settings-btn") as HTMLButtonElement;
-    const backBtn = document.getElementById("back-btn") as HTMLButtonElement;
+    const backBtn = document.getElementById("settings-back-btn") as HTMLButtonElement;
     const menuButtons = document.querySelectorAll(".menu-btn") as NodeListOf<HTMLButtonElement>;
     const goodleText = document.getElementById("goodle-text");
 

@@ -20,7 +20,7 @@
             </div>
         </noscript>
         <!----------------- Login Page  ------------------------>
-        <div id="login-page" class="page flex items-center justify-center h-screen">
+        <div id="login-page" class="page flex items-center justify-center h-screen hidden">
             <div class="p-8 w-96">
                 <h1 class="text-gray-light text-4xl font-bold text-center mb-6 font-anonymouspro">goodle™</h1>
                 <form id="login-form" class="space-y-4">
@@ -51,25 +51,46 @@
         <!----------------- Loader ------------------------>
         <div id="spinner" class="border-white h-20 w-20 animate-spin rounded-full border-8 border-t-orange hidden"></div>
         <!----------------- Main Page ------------------------>
-        <div id="main-page" class="page relative flex flex-col justify-center items-center opacity-0 xs:opacity-100 md:opacity-100 lg:opacity-100 xl:opacity-100 hidden">
+        <div id="main-page" class="page relative flex flex-col justify-center items-center opacity-0 xs:opacity-100 md:opacity-100 lg:opacity-100 xl:opacity-100">
             <h1 id="goodle-text" class="text-orange text-5xl font-bold text-center mb-8 font-anonymouspro">goodle™</h1>
             <!-- Buttons in a row with consistent spacing -->
             <div class="flex flex-row justify-center items-center gap-x-2">
-                <button id="start-btn" class="menu-btn py-6 bg-purple-300 rounded-lg font-anonymouspro text-center text-xs text-white transition-all bg-transparent hover:scale-150 focus:scale-150 active:bg-orange disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none w-28">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 pb-2 mx-auto">
+                <button id="start-btn" class="menu-btn py-6 bg-purple-100 rounded-lg font-anonymouspro text-center text-xs text-white transition-all bg-transparent hover:scale-150 focus:scale-150 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none w-28">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-10 h-10 pb-2 mx-auto"
+                    >
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"/>
                     </svg>
                     Start
                 </button>
-                <button id="settings-btn" class="menu-btn py-6 bg-gray rounded-lg font-anonymouspro text-center text-xs text-white transition-all bg-transparent hover:scale-150 focus:scale-150 active:bg-orange disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none w-28">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 pb-2 mx-auto">
+                <button id="settings-btn" class="menu-btn py-6 bg-gray rounded-lg font-anonymouspro text-center text-xs text-white transition-all bg-transparent hover:scale-150 focus:scale-150 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none w-28">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-10 h-10 pb-2 mx-auto"
+                    >
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z"/>
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                     </svg>
                     Settings
                 </button>
-                <button id="quit-btn" class="menu-btn py-6 rounded-lg bg-red text-center text-xs text-white transition-all bg-transparent hover:scale-150 focus:scale-150 active:bg-orange disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none w-28">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10- h-10 pb-2 mx-auto">
+                <button id="quit-btn" class="menu-btn py-6 rounded-lg bg-red text-center text-xs text-white transition-all bg-transparent hover:scale-150 focus:scale-150 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none w-28">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-10- h-10 pb-2 mx-auto"
+                    >
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9"/>
                     </svg>
                     Quit
@@ -78,7 +99,7 @@
         </div>
         <!----------------- Settings Page ------------------------>
         <div id="settings-page" class="fixed flex flex-col justify-center top-0 right-0 h-full w-2/3 sm:2/5 md:w-2/5 lg:w-2/5 xl:w-2/5 bg-blue-500 p-6 shadow-md transform translate-x-full transition-transform duration-500 ease-in-out">
-            <button id="back-btn" class="bg-transparent text-white text-xl absolute top-4 left-4">
+            <button id="settings-back-btn" class="bg-transparent text-gray-light text-xl absolute top-4 left-4">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -123,6 +144,99 @@
                     </div>
                 </form>
             </div>
+        </div>
+        <!----------------- Subjects Page ------------------------>
+        <div id="subjects-page" class="px-4 container mx-auto my-auto hidden">
+            <button id="menu-back-btn" class="bg-transparent text-gray-light text-xl absolute top-4 left-4">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5"/>
+                </svg>
+            </button>
+            <section>
+                <!---- SUBJECTS: Add cards for new subject --------->
+                <div class="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 gap-10 py-20">
+                    <div class=" group bg-[#5700c9] w-56  mx-auto p-8 px-4 rounded-lg">
+                        <div class=" flex justify-end ">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                class="group-hover:-translate-y-6 duration-700 h-14 w-14 text-[60px] text-[#7812ff]"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                            >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z"/>
+                            </svg>
+                        </div>
+                        <p class="pt-16 group-hover:-translate-y-6 duration-700 text-2xl font-anonymouspro text-gray-light">
+                            Lorem Ipsum is simply dummy text of the printing.
+                        </p>
+                    </div>
+                    <div class="group bg-[#6C0345] w-56 mx-auto  p-8 px-4 rounded-lg">
+                        <div class=" flex justify-end">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                fill="none"
+                                class="group-hover:-translate-y-6 duration-700  text-[60px] text-[#ffedc57a] h-14 w-14"
+                            >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"/>
+                            </svg>
+                        </div>
+                        <p class="pt-16 group-hover:-translate-y-6 duration-700 text-2xl font-anonymouspro text-gray-light">
+                            Lorem Ipsum is simply dummy text of the printing.
+                        </p>
+                    </div>
+                    <div class="group bg-[#cf021a] w-56  mx-auto  p-8 px-4 rounded-lg">
+                        <div class=" flex justify-end">
+                            <svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 24 24"
+                                class="group-hover:-translate-y-6 duration-700  text-[60px] text-[#f569797a]"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path d="m19.707 4.293-1.414 1.414c2.733 2.733 2.733 7.353 0 10.086l1.414 1.414c3.5-3.5 3.5-9.414 0-12.914zm-4.414 4.414c.566.566.879 1.292.879 2.043s-.313 1.477-.879 2.043l1.414 1.414c.944-.943 1.465-2.172 1.465-3.457s-.521-2.514-1.465-3.457l-1.414 1.414zm-9.086-3L4.793 4.293c-3.5 3.5-3.5 9.414 0 12.914l1.414-1.414c-2.733-2.733-2.733-7.353 0-10.086z"></path>
+                                <path d="M7.293 7.293c-.944.943-1.465 2.172-1.465 3.457s.521 2.514 1.465 3.457l1.414-1.414c-.566-.566-.879-1.292-.879-2.043s.313-1.477.879-2.043L7.293 7.293zM14 10.5a2 2 0 0 0-4 0 1.993 1.993 0 0 0 .895 1.666L10.002 22h3.996l-.893-9.835c.54-.358.895-.97.895-1.665z"></path>
+                            </svg>
+                        </div>
+                        <p class="pt-16 group-hover:-translate-y-6 duration-700 text-2xl font-anonymouspro text-gray-light">
+                            Lorem Ipsum is simply dummy text of the printing.
+                        </p>
+                    </div>
+                    <div class="group bg-[#5a5a5a] w-56 mx-auto  p-8 px-4 rounded-lg">
+                        <div class=" flex justify-end">
+                            <svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 16 16"
+                                class="group-hover:-translate-y-6 duration-700  text-[60px] text-[#a9a8a857]"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path d="M3 2.5A1.5 1.5 0 0 1 4.5 1h1A1.5 1.5 0 0 1 7 2.5V5h2V2.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5v2.382a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V14.5a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 14.5v-3a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5v3A1.5 1.5 0 0 1 5.5 16h-3A1.5 1.5 0 0 1 1 14.5V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882zM4.5 2a.5.5 0 0 0-.5.5V3h2v-.5a.5.5 0 0 0-.5-.5zM6 4H4v.882a1.5 1.5 0 0 1-.83 1.342l-.894.447A.5.5 0 0 0 2 7.118V13h4v-1.293l-.854-.853A.5.5 0 0 1 5 10.5v-1A1.5 1.5 0 0 1 6.5 8h3A1.5 1.5 0 0 1 11 9.5v1a.5.5 0 0 1-.146.354l-.854.853V13h4V7.118a.5.5 0 0 0-.276-.447l-.895-.447A1.5 1.5 0 0 1 12 4.882V4h-2v1.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5zm4-1h2v-.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm4 11h-4v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zm-8 0H2v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5z"></path>
+                            </svg>
+                        </div>
+                        <p class="pt-16 group-hover:-translate-y-6 duration-700 text-2xl font-anonymouspro text-gray-light">
+                            Lorem Ipsum is simply dummy text of the printing.
+                        </p>
+                    </div>
+                </div>
+            </section>
         </div>
         <!----------------- Questions Page ------------------------>
         <div id="questions-page" class="page hidden">
