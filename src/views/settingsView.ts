@@ -9,6 +9,7 @@ export function settingsView(settingsPage: HTMLElement, mainPage: HTMLElement) {
         settingsPage.classList.remove("translate-x-full");
         mainPage.classList.remove("hidden");
         mainPage.classList.add("translate-x-[-40%]"); // Shift main-page buttons
+        mainPage.classList.remove("xs:opacity-100");
         menuButtons.forEach((btn) => btn.disabled = true);
         goodleText?.classList.add("opacity-50");
     });
@@ -17,6 +18,7 @@ export function settingsView(settingsPage: HTMLElement, mainPage: HTMLElement) {
     backBtn.addEventListener("click", () => {
         settingsPage.classList.add("translate-x-full");
         mainPage.classList.remove("translate-x-[-40%]"); 
+        mainPage.classList.add("xs:opacity-100");
         menuButtons.forEach((btn) => btn.disabled = false);
         goodleText?.classList.remove("opacity-50");
     });
