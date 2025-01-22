@@ -1,4 +1,4 @@
-export function mainView(mainPage: HTMLElement, settingsPage: HTMLElement, questionsPage: HTMLElement) {
+export function mainView(mainPage: HTMLElement, settingsPage: HTMLElement, subjectsPage: HTMLElement) {
     const startBtn = document.getElementById("start-btn") as HTMLButtonElement;
     const settingsBtn = document.getElementById("settings-btn") as HTMLButtonElement;
     const quitBtn = document.getElementById("quit-btn") as HTMLButtonElement;
@@ -6,8 +6,7 @@ export function mainView(mainPage: HTMLElement, settingsPage: HTMLElement, quest
     // Show question page
     startBtn.addEventListener("click", () => {
         mainPage.classList.add("hidden");
-        questionsPage.classList.remove("hidden");
-        displayQuestion(); // Function to dynamically load questions
+        subjectsPage.classList.remove("hidden");
     });
 
     // Show settings page
