@@ -30,7 +30,10 @@ module.exports = {
       'green': '#13ce66',
       'yellow': '#ffc82c',
       'gray-dark': '#273444',
-      'gray': '#8492a6',
+      'gray': {
+        100: '#8492a6',
+        200: '#757575',
+      },
       'gray-light': '#d3dce6',
       'white': '#ffffff',
       'red': '#ff4d4f',
@@ -52,6 +55,19 @@ module.exports = {
     animation: {
       slidein: "slidein 1s ease 300ms",
       spin: 'spin 1s linear infinite',
+      colorpulse: 'colorPulse 3s ease-in-out infinite',
+    },
+    keyframes: {
+      colorPulse: {
+        '0%': { stroke: '#8b5cf6' }, /* Purple */
+        '33%': { stroke: '#ef4444' }, /* Red */
+        '66%': { stroke: '#3b82f6' }, /* Blue */
+        '100%': { stroke: '#8b5cf6' }, /* Purple */
+      },
+      spin: {
+        '0%': { transform: 'rotate(0deg)' },
+        '100%': { transform: 'rotate(360deg)' },
+      },
     },
   },
   plugins: [],
