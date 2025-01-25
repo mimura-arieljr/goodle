@@ -14,19 +14,23 @@ export function settingsView(settingsPage: HTMLElement, mainPage: HTMLElement) {
 
         // Control buttons and text UI
         menuButtons.forEach((btn) => btn.disabled = true);
-        quitBtn.classList.add("hidden");
         settingsBtn.classList.add("hidden");
         goodleText?.classList.add("opacity-50");
     });
 
     backBtn.addEventListener("click", () => {
         settingsPage.classList.add("translate-x-full");
-        mainPage.classList.remove("translate-x-[-40%]"); 
+        mainPage.classList.remove("translate-x-[-40%]");
         mainPage.classList.add("xs:opacity-100");
 
         menuButtons.forEach((btn) => btn.disabled = false);
-        quitBtn.classList.remove("hidden");
         settingsBtn.classList.remove("hidden");
         goodleText?.classList.remove("opacity-50");
+    });
+
+    // Handle quitting (e.g., reset app state or show an exit message)
+    quitBtn.addEventListener("click", () => {
+        // Handle quitting
+        window.location.reload(); // Just as an example
     });
 }

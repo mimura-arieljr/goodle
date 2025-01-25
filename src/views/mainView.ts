@@ -1,7 +1,6 @@
 export function mainView(mainPage: HTMLElement, settingsPage: HTMLElement, subjectsPage: HTMLElement) {
     const startBtn = document.getElementById("start-btn") as HTMLButtonElement;
     const settingsBtn = document.getElementById("settings-btn") as HTMLButtonElement;
-    const quitBtn = document.getElementById("quit-btn") as HTMLButtonElement;
 
     // Show question page
     startBtn.addEventListener("click", () => {
@@ -13,12 +12,6 @@ export function mainView(mainPage: HTMLElement, settingsPage: HTMLElement, subje
     settingsBtn.addEventListener("click", () => {
         mainPage.classList.add("hidden");
         settingsPage.classList.remove("hidden");
-    });
-
-    // Handle quitting (e.g., reset app state or show an exit message)
-    quitBtn.addEventListener("click", () => {
-        // Handle quitting
-        window.location.reload(); // Just as an example
     });
 
 
