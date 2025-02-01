@@ -10,272 +10,295 @@
         <script type="module" src="./dist/index.js" defer></script>
         <title>goodle™</title>
     </head>
-    <body class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 via-gray-dark via-gray to-blue-500 h-screen">
-        <!----------------- Show this if JavaScript is disabled ------------------------>
-        <noscript>
-            <div class="fixed top-0 left-0 w-full p-4 bg-red text-white text-center font-bold z-50">
-                <p>
-                    <strong>JavaScript is required to view this application. Please enable JavaScript in your browser settings.</strong>
-                </p>
-            </div>
-        </noscript>
-        <!----------------- Login Page  ------------------------>
-        <div id="login-page" class="page flex items-center justify-center h-screen">
-            <div class="p-8 w-96">
-                <h1 class="text-gray-light text-4xl font-bold text-center mb-6 font-anonymouspro">goodle™</h1>
-                <form id="login-form" class="space-y-4">
-                    <input
-                        type="password"
-                        placeholder="Enter Password"
-                        id="password"
-                        class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    >
-                    <div id="invalid-password" class="hidden flex text-red text-sm font-anonymouspro font-sm mt-1 justify-start">
-                        <span>Invalid Password</span>
+    <body class="h-screen">
+        <div class="relative w-full bg-slate-950 flex justify-center items-center overflow-hidden">
+            <div class="background-wrap custom-light-full"></div>
+            <!----------------- Show this if JavaScript is disabled ------------------------>
+            <noscript>
+                <div class="fixed top-0 left-0 w-full p-4 bg-red text-white text-center font-bold z-50">
+                    <p>
+                        <strong>JavaScript is required to view this application. Please enable JavaScript in your browser settings.</strong>
+                    </p>
+                </div>
+            </noscript>
+            <!----------------- Login Page  ------------------------>
+            <div id="login-page" class="page flex items-center justify-center h-screen">
+                <div class="p-8 w-96">
+                    <h1 class="text-gray-200 dark:text-gray-light text-4xl font-bold text-center mb-6 font-anonymouspro">goodle™</h1>
+                    <form id="login-form" class="space-y-4">
+                        <input
+                            type="password"
+                            placeholder="Enter Password"
+                            id="password"
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        >
+                        <div id="invalid-password" class="hidden flex text-red text-sm font-anonymouspro font-sm mt-1 justify-start">
+                            <span>Invalid Password</span>
+                        </div>
+                        <div class="flex justify-center">
+                            <button class="btn w-full bg-orange rounded-lg relative inline-flex items-center justify-start overflow-hidden font-medium transition-all rounded group py-2 px-2.5">
+                                <span class="w-full h-48 rounded bg-purple-300 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                                <span class="relative w-full text-center text-white transition-colors duration-300 ease-in-out group-hover:text-white font-anonymouspro">Continue</span>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="flex mt-8">
+                        <span class="text-gray-200 dark:text-gray-light font-bold font-anonymouspro text-sm">
+                            Don't have access?
+                            <span class="text-orange">Request Here</span>
+                        </span>
                     </div>
-                    <div class="flex justify-center">
-                        <button class="btn w-full bg-orange rounded-lg relative inline-flex items-center justify-start overflow-hidden font-medium transition-all rounded group py-2 px-2.5">
-                            <span class="w-full h-48 rounded bg-purple-300 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-                            <span class="relative w-full text-center text-white transition-colors duration-300 ease-in-out group-hover:text-white font-anonymouspro">Continue</span>
-                        </button>
-                    </div>
-                </form>
-                <div class="flex mt-8">
-                    <span class="text-gray-light font-bold font-anonymouspro text-sm">
-                        Don't have access?
-                        <span class="text-orange">Request Here</span>
-                    </span>
                 </div>
             </div>
-        </div>
-        <!----------------- Loader ------------------------>
-        <div id="spinner" class="border-white h-20 w-20 animate-spin rounded-full border-8 border-t-orange hidden"></div>
-        <!----------------- Main Page ------------------------>
-        <div id="main-page" class="page relative w-2/5 h-screen flex flex-col justify-center items-left opacity-0 xs:opacity-100 md:opacity-100 lg:opacity-100 xl:opacity-100 hidden">
-            <div class="fixed flex flex-row justify-center top-0 right-0 p-2">
-                <button id="settings-btn" class="menu-btn rounded-lg font-anonymouspro text-center text-xs text-white transition-all bg-transparent hover:scale-150 focus:scale-150 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="h-6 w-6 text-gray-200"
-                    >
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
-                    </svg>
-                </button>
+            <!----------------- Loader ------------------------>
+            <div id="spinner" class="fixed inset-0 flex items-center justify-center hidden">
+                <div class="border-white h-20 w-20 animate-spin rounded-full border-8 border-t-orange"></div>
             </div>
-            <div class="w-full flex flex-col justify-center items-center">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="h-64 w-64 text-purple-300 animate-colorpulse"
-                >
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.098 19.902a3.75 3.75 0 0 0 5.304 0l6.401-6.402M6.75 21A3.75 3.75 0 0 1 3 17.25V4.125C3 3.504 3.504 3 4.125 3h5.25c.621 0 1.125.504 1.125 1.125v4.072M6.75 21a3.75 3.75 0 0 0 3.75-3.75V8.197M6.75 21h13.125c.621 0 1.125-.504 1.125-1.125v-5.25c0-.621-.504-1.125-1.125-1.125h-4.072M10.5 8.197l2.88-2.88c.438-.439 1.15-.439 1.59 0l3.712 3.713c.44.44.44 1.152 0 1.59l-2.879 2.88M6.75 17.25h.008v.008H6.75v-.008Z"/>
-                </svg>
-                <h1 id="goodle-text" class="text-gray-200 text-4xl mb-8 font-anonymouspro">goodle</h1>
-                <button id="start-btn" class="mt-8 bg-transparent hover:bg-blue-500 text-gray-light font-anonymouspro hover:text-white py-2 px-8 border border-orange hover:animate-pulsate focus:animate-pulsate rounded w-auto min-w-[150px] whitespace-nowrap">
-                    Get Started
-                </button>
-            </div>
-        </div>
-        <!----------------- Settings Page ------------------------>
-        <div id="settings-page" class="fixed flex flex-col top-0 right-0 h-full w-2/3 sm:w-2/5 md:w-2/5 lg:w-2/5 xl:w-2/5 bg-blue-500 p-6 shadow-md transform translate-x-full transition-transform duration-500 ease-in-out overflow-y-auto">
-            <!-- Back Button -->
-            <button id="settings-back-btn" class="bg-transparent text-gray-light text-xl absolute top-4 left-4 hover:translate-x-2 focus:translate-x-2 transition-transform duration-300">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-6 h-6"
-                >
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 4.5l7.5 7.5-7.5 7.5m6-15l7.5 7.5-7.5 7.5"/>
-                </svg>
-            </button>
-            <!-- Settings Title -->
-            <h2 class="text-orange text-2xl font-anonymouspro mb-8 mt-12">Settings</h2>
-            <!-- Form Section -->
-            <div>
-                <form id="settings-form" class="space-y-6">
-                    <!-- Enable/Disable Scoring -->
-                    <div class="flex items-center space-x-3">
-                        <input type="checkbox" id="enable-scoring" class="w-5 h-5 border rounded focus:ring-2 focus:ring-blue-300">
-                        <label for="enable-scoring" class="text-gray-light font-anonymouspro">Enable Scoring</label>
-                    </div>
-                    <!-- Timer per Question -->
-                    <div class="flex flex-col">
-                        <label for="timer" class="text-gray-light font-anonymouspro mb-2">Desired Time per Question</label>
-                        <input
-                            type="number"
-                            id="timer"
-                            placeholder="seconds"
-                            class="w-full p-3 rounded-lg bg-blue-150 border border-gray-light text-gray-light placeholder-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                            max="120"
-                            min="0"
-                        >
-                    </div>
-                    <!-- Number of Questions -->
-                    <div class="flex flex-col">
-                        <label for="num-questions" class="text-gray-light font-anonymouspro mb-2">Number of Questions</label>
-                        <input
-                            type="number"
-                            id="num-questions"
-                            placeholder="minimum: 10"
-                            class="w-full p-3 rounded-lg bg-blue-150 border border-gray-light text-gray-light placeholder-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                            min="10"
-                        >
-                    </div>
-                </form>
-                <div id="feedback-form" class="mt-8 space-y-6">
-                    <div class="flex flex-col">
-                        <label for="feedback" class="text-gray-light font-anonymouspro mb-2">Any feedback?</label>
-                        <textarea
-                            id="feedback"
-                            placeholder="Type your feedback here..."
-                            rows="5"
-                            class="w-full p-3 rounded-lg bg-blue-150 border border-gray-light text-gray-light placeholder-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
-                        ></textarea>
-                    </div>
-                    <div class="flex justify-end">
-                        <button type="submit" class="flex items-center justify-center transition-all focus:outline-none focus:ring-2 focus:ring-blue-500">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                class="w-6 h-6 text-gray-light hover:text-orange"
-                            >
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"/>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <!-- Quit Button -->
-                <div class="flex flex-row justify-center mt-8">
-                    <button id="quit-btn" class="flex items-center space-x-2 py-2 px-4 bg-blue-200 rounded-lg text-center transition-all transform hover:bg-red-800 focus:bg-red-800 focus:outline-none">
+            <!----------------- Main Page ------------------------>
+            <div id="main-page" class="page relative w-full h-screen flex flex-col justify-center items-left opacity-0 xs:opacity-100 md:opacity-100 lg:opacity-100 xl:opacity-100 hidden">
+                <div class="absolute top-0 right-0 p-2">
+                    <button id="settings-btn" class="menu-btn rounded-lg font-anonymouspro text-center text-xs text-white transition-all bg-transparent hover:scale-150 focus:scale-150 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke-width="1.5"
                             stroke="currentColor"
-                            class="h-6 w-6 text-white"
+                            class="h-6 w-6 text-gray-200"
                         >
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
                         </svg>
-                        <span class="text-white text-md font-anonymouspro">Logout</span>
+                    </button>
+                </div>
+                <div class="w-full flex flex-col justify-center items-center">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="h-64 w-64 text-purple-300 animate-colorpulse"
+                    >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.098 19.902a3.75 3.75 0 0 0 5.304 0l6.401-6.402M6.75 21A3.75 3.75 0 0 1 3 17.25V4.125C3 3.504 3.504 3 4.125 3h5.25c.621 0 1.125.504 1.125 1.125v4.072M6.75 21a3.75 3.75 0 0 0 3.75-3.75V8.197M6.75 21h13.125c.621 0 1.125-.504 1.125-1.125v-5.25c0-.621-.504-1.125-1.125-1.125h-4.072M10.5 8.197l2.88-2.88c.438-.439 1.15-.439 1.59 0l3.712 3.713c.44.44.44 1.152 0 1.59l-2.879 2.88M6.75 17.25h.008v.008H6.75v-.008Z"/>
+                    </svg>
+                    <h1 id="goodle-text" class="text-gray-200 dark:text-gray-light text-4xl mb-8 font-anonymouspro">goodle</h1>
+                    <button id="start-btn" class="menu-btn mt-8 bg-transparent font-anonymouspro py-2 px-8 border border-orange text-gray-200 dark:text-gray-light dark:hover:text-white hover:animate-pulsate focus:animate-pulsate rounded w-auto min-w-[150px] whitespace-nowrap">
+                        Get Started
                     </button>
                 </div>
             </div>
-        </div>
-        <!----------------- Subjects Page ------------------------>
-        <div id="subjects-page" class="px-4 container mx-auto my-auto hidden">
-            <button id="subjects-back-btn" class="bg-transparent text-gray-light text-xl absolute top-4 left-4 hover:-translate-x-2 focus:-translate-x-2 transition-transform duration-30">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-6"
-                >
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5"/>
-                </svg>
-            </button>
-            <h1 class="text-gray-200 text-4xl text-center font-anonymouspro pt-5">choose your battle</h1>
-            <section>
-                <!---- SUBJECTS: Add cards for new subject --------->
-                <div class="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 gap-10 py-10">
-                    <div class=" group bg-[#5700c9] w-56  mx-auto p-8 px-4 rounded-lg">
-                        <div class=" flex justify-end ">
+            <!----------------- Settings Page ------------------------>
+            <div id="settings-page" class="fixed flex flex-col top-0 right-0 h-full w-2/3 sm:w-2/5 md:w-2/5 lg:w-2/5 xl:w-2/5 bg-blue-200 dark:bg-blue-500 p-6 shadow-md transform translate-x-full transition-transform duration-500 ease-in-out overflow-y-auto">
+                <!-- Back Button -->
+                <button id="settings-back-btn" class="bg-transparent text-gray-light text-xl absolute top-4 left-4 hover:translate-x-2 focus:translate-x-2 transition-transform duration-300">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6"
+                    >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 4.5l7.5 7.5-7.5 7.5m6-15l7.5 7.5-7.5 7.5"/>
+                    </svg>
+                </button>
+                <!-- Settings Title -->
+                <h2 class="text-orange text-2xl font-anonymouspro mb-8 mt-12">Settings</h2>
+                <!-- Form Section -->
+                <div>
+                    <form id="settings-form" class="space-y-6">
+                        <!-- Enable/Disable Scoring and Dark Mode -->
+                        <div class="flex items-center justify-between">
+                            <!-- Enable/Disable Scoring -->
+                            <div class="flex items-center space-x-3">
+                                <input type="checkbox" id="enable-scoring" class="w-5 h-5 border rounded focus:ring-2 focus:ring-blue-300">
+                                <label for="enable-scoring" class="text-gray-light font-anonymouspro">Enable Scoring</label>
+                            </div>
+                            <!-- Enable/Disable Dark Mode Button -->
+                            <div class="flex items-center space-x-3">
+                                <button id="dark-mode-btn" class="p-1 ">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="w-6 h-6 text-gray-light hover:text-orange"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"/>
+                                    </svg>
+                                </button>
+                                <label for="dark-mode-btn" class="text-gray-light font-anonymouspro">Enable Dark Mode?</label>
+                            </div>
+                        </div>
+                        <!-- Timer per Question -->
+                        <div class="flex flex-col">
+                            <label for="timer" class="text-gray-light font-anonymouspro mb-2">Desired Time per Question</label>
+                            <input
+                                type="number"
+                                id="timer"
+                                placeholder="seconds"
+                                class="w-full p-3 rounded-lg bg-blue-150 border border-gray-light text-gray-light placeholder-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                max="120"
+                                min="0"
+                            >
+                        </div>
+                        <!-- Number of Questions -->
+                        <div class="flex flex-col">
+                            <label for="num-questions" class="text-gray-light font-anonymouspro mb-2">Number of Questions</label>
+                            <input
+                                type="number"
+                                id="num-questions"
+                                placeholder="minimum: 10"
+                                class="w-full p-3 rounded-lg bg-blue-150 border border-gray-light text-gray-light placeholder-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                min="10"
+                            >
+                        </div>
+                    </form>
+                    <div id="feedback-form" class="mt-8 space-y-6">
+                        <div class="flex flex-col">
+                            <label for="feedback" class="text-gray-light font-anonymouspro mb-2">Any feedback?</label>
+                            <textarea
+                                id="feedback"
+                                placeholder="Type your feedback here..."
+                                rows="5"
+                                class="w-full p-3 rounded-lg bg-blue-150 border border-gray-light text-gray-light placeholder-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+                            ></textarea>
+                        </div>
+                        <div class="flex justify-end">
+                            <button type="submit" class="flex items-center justify-center">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-6 h-6 text-gray-light hover:text-orange"
+                                >
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Quit Button -->
+                    <div class="flex flex-row justify-center mt-8">
+                        <button id="quit-btn" class="flex items-center space-x-2 py-2 px-4 bg-blue-200 rounded-lg text-center transition-all transform hover:bg-red-800 focus:bg-red-800 focus:outline-none">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 24 24"
-                                class="group-hover:-translate-y-6 duration-700 h-14 w-14 text-[60px] text-[#7812ff]"
                                 stroke-width="1.5"
                                 stroke="currentColor"
+                                class="h-6 w-6 text-white"
                             >
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9"/>
                             </svg>
-                        </div>
-                        <p class="pt-16 group-hover:-translate-y-6 duration-700 text-2xl font-anonymouspro text-gray-light">
-                            Lorem Ipsum is simply dummy text of the printing.
-                        </p>
-                    </div>
-                    <div class="group bg-[#6C0345] w-56 mx-auto  p-8 px-4 rounded-lg">
-                        <div class=" flex justify-end">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                fill="none"
-                                class="group-hover:-translate-y-6 duration-700  text-[60px] text-[#ffedc57a] h-14 w-14"
-                            >
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"/>
-                            </svg>
-                        </div>
-                        <p class="pt-16 group-hover:-translate-y-6 duration-700 text-2xl font-anonymouspro text-gray-light">
-                            Lorem Ipsum is simply dummy text of the printing.
-                        </p>
-                    </div>
-                    <div class="group bg-[#cf021a] w-56  mx-auto  p-8 px-4 rounded-lg">
-                        <div class=" flex justify-end">
-                            <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                stroke-width="0"
-                                viewBox="0 0 24 24"
-                                class="group-hover:-translate-y-6 duration-700  text-[60px] text-[#f569797a]"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path d="m19.707 4.293-1.414 1.414c2.733 2.733 2.733 7.353 0 10.086l1.414 1.414c3.5-3.5 3.5-9.414 0-12.914zm-4.414 4.414c.566.566.879 1.292.879 2.043s-.313 1.477-.879 2.043l1.414 1.414c.944-.943 1.465-2.172 1.465-3.457s-.521-2.514-1.465-3.457l-1.414 1.414zm-9.086-3L4.793 4.293c-3.5 3.5-3.5 9.414 0 12.914l1.414-1.414c-2.733-2.733-2.733-7.353 0-10.086z"></path>
-                                <path d="M7.293 7.293c-.944.943-1.465 2.172-1.465 3.457s.521 2.514 1.465 3.457l1.414-1.414c-.566-.566-.879-1.292-.879-2.043s.313-1.477.879-2.043L7.293 7.293zM14 10.5a2 2 0 0 0-4 0 1.993 1.993 0 0 0 .895 1.666L10.002 22h3.996l-.893-9.835c.54-.358.895-.97.895-1.665z"></path>
-                            </svg>
-                        </div>
-                        <p class="pt-16 group-hover:-translate-y-6 duration-700 text-2xl font-anonymouspro text-gray-light">
-                            Lorem Ipsum is simply dummy text of the printing.
-                        </p>
-                    </div>
-                    <div class="group bg-[#5a5a5a] w-56 mx-auto  p-8 px-4 rounded-lg">
-                        <div class=" flex justify-end">
-                            <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                stroke-width="0"
-                                viewBox="0 0 16 16"
-                                class="group-hover:-translate-y-6 duration-700  text-[60px] text-[#a9a8a857]"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path d="M3 2.5A1.5 1.5 0 0 1 4.5 1h1A1.5 1.5 0 0 1 7 2.5V5h2V2.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5v2.382a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V14.5a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 14.5v-3a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5v3A1.5 1.5 0 0 1 5.5 16h-3A1.5 1.5 0 0 1 1 14.5V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882zM4.5 2a.5.5 0 0 0-.5.5V3h2v-.5a.5.5 0 0 0-.5-.5zM6 4H4v.882a1.5 1.5 0 0 1-.83 1.342l-.894.447A.5.5 0 0 0 2 7.118V13h4v-1.293l-.854-.853A.5.5 0 0 1 5 10.5v-1A1.5 1.5 0 0 1 6.5 8h3A1.5 1.5 0 0 1 11 9.5v1a.5.5 0 0 1-.146.354l-.854.853V13h4V7.118a.5.5 0 0 0-.276-.447l-.895-.447A1.5 1.5 0 0 1 12 4.882V4h-2v1.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5zm4-1h2v-.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm4 11h-4v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zm-8 0H2v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5z"></path>
-                            </svg>
-                        </div>
-                        <p class="pt-16 group-hover:-translate-y-6 duration-700 text-2xl font-anonymouspro text-gray-light">
-                            Lorem Ipsum is simply dummy text of the printing.
-                        </p>
+                            <span class="text-white text-md font-anonymouspro">Logout</span>
+                        </button>
                     </div>
                 </div>
-            </section>
+            </div>
+            <!----------------- Subjects Page ------------------------>
+            <div id="subjects-page" class="px-4 container mx-auto my-auto hidden">
+                <button id="subjects-back-btn" class="bg-transparent text-gray-light text-xl absolute top-4 left-4 hover:-translate-x-2 focus:-translate-x-2 transition-transform duration-30">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                    >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5"/>
+                    </svg>
+                </button>
+                <h1 class="text-gray-200 text-4xl text-center font-anonymouspro pt-5">choose your battle</h1>
+                <section>
+                    <!---- SUBJECTS: Add cards for new subject --------->
+                    <div class="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 gap-10 py-10">
+                        <div class=" group bg-[#5700c9] w-56  mx-auto p-8 px-4 rounded-lg">
+                            <div class=" flex justify-end ">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    class="group-hover:-translate-y-6 duration-700 h-14 w-14 text-[60px] text-[#7812ff]"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                >
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z"/>
+                                </svg>
+                            </div>
+                            <p class="pt-16 group-hover:-translate-y-6 duration-700 text-2xl font-anonymouspro text-gray-light">
+                                Lorem Ipsum is simply dummy text of the printing.
+                            </p>
+                        </div>
+                        <div class="group bg-[#6C0345] w-56 mx-auto  p-8 px-4 rounded-lg">
+                            <div class=" flex justify-end">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    fill="none"
+                                    class="group-hover:-translate-y-6 duration-700  text-[60px] text-[#ffedc57a] h-14 w-14"
+                                >
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"/>
+                                </svg>
+                            </div>
+                            <p class="pt-16 group-hover:-translate-y-6 duration-700 text-2xl font-anonymouspro text-gray-light">
+                                Lorem Ipsum is simply dummy text of the printing.
+                            </p>
+                        </div>
+                        <div class="group bg-[#cf021a] w-56  mx-auto  p-8 px-4 rounded-lg">
+                            <div class=" flex justify-end">
+                                <svg
+                                    stroke="currentColor"
+                                    fill="currentColor"
+                                    stroke-width="0"
+                                    viewBox="0 0 24 24"
+                                    class="group-hover:-translate-y-6 duration-700  text-[60px] text-[#f569797a]"
+                                    height="1em"
+                                    width="1em"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path d="m19.707 4.293-1.414 1.414c2.733 2.733 2.733 7.353 0 10.086l1.414 1.414c3.5-3.5 3.5-9.414 0-12.914zm-4.414 4.414c.566.566.879 1.292.879 2.043s-.313 1.477-.879 2.043l1.414 1.414c.944-.943 1.465-2.172 1.465-3.457s-.521-2.514-1.465-3.457l-1.414 1.414zm-9.086-3L4.793 4.293c-3.5 3.5-3.5 9.414 0 12.914l1.414-1.414c-2.733-2.733-2.733-7.353 0-10.086z"></path>
+                                    <path d="M7.293 7.293c-.944.943-1.465 2.172-1.465 3.457s.521 2.514 1.465 3.457l1.414-1.414c-.566-.566-.879-1.292-.879-2.043s.313-1.477.879-2.043L7.293 7.293zM14 10.5a2 2 0 0 0-4 0 1.993 1.993 0 0 0 .895 1.666L10.002 22h3.996l-.893-9.835c.54-.358.895-.97.895-1.665z"></path>
+                                </svg>
+                            </div>
+                            <p class="pt-16 group-hover:-translate-y-6 duration-700 text-2xl font-anonymouspro text-gray-light">
+                                Lorem Ipsum is simply dummy text of the printing.
+                            </p>
+                        </div>
+                        <div class="group bg-[#5a5a5a] w-56 mx-auto  p-8 px-4 rounded-lg">
+                            <div class=" flex justify-end">
+                                <svg
+                                    stroke="currentColor"
+                                    fill="currentColor"
+                                    stroke-width="0"
+                                    viewBox="0 0 16 16"
+                                    class="group-hover:-translate-y-6 duration-700  text-[60px] text-[#a9a8a857]"
+                                    height="1em"
+                                    width="1em"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path d="M3 2.5A1.5 1.5 0 0 1 4.5 1h1A1.5 1.5 0 0 1 7 2.5V5h2V2.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5v2.382a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V14.5a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 14.5v-3a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5v3A1.5 1.5 0 0 1 5.5 16h-3A1.5 1.5 0 0 1 1 14.5V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882zM4.5 2a.5.5 0 0 0-.5.5V3h2v-.5a.5.5 0 0 0-.5-.5zM6 4H4v.882a1.5 1.5 0 0 1-.83 1.342l-.894.447A.5.5 0 0 0 2 7.118V13h4v-1.293l-.854-.853A.5.5 0 0 1 5 10.5v-1A1.5 1.5 0 0 1 6.5 8h3A1.5 1.5 0 0 1 11 9.5v1a.5.5 0 0 1-.146.354l-.854.853V13h4V7.118a.5.5 0 0 0-.276-.447l-.895-.447A1.5 1.5 0 0 1 12 4.882V4h-2v1.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5zm4-1h2v-.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm4 11h-4v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zm-8 0H2v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5z"></path>
+                                </svg>
+                            </div>
+                            <p class="pt-16 group-hover:-translate-y-6 duration-700 text-2xl font-anonymouspro text-gray-light">
+                                Lorem Ipsum is simply dummy text of the printing.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!----------------- Questions Page ------------------------>
+            <div id="questions-page" class="page hidden">
+                <h2>Questions</h2>
+                <div id="question-container">
+                    <!-- Question content will be injected here --></div>
+                <button id="next-btn">Next</button>
+            </div>
         </div>
-        <!----------------- Questions Page ------------------------>
-        <div id="questions-page" class="page hidden">
-            <h2>Questions</h2>
-            <div id="question-container">
-                <!-- Question content will be injected here --></div>
-            <button id="next-btn">Next</button>
-        </div>
-        <!-- <script src="./dist/main.js"></script> -->
     </body>
 </html>
