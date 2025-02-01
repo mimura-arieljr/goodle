@@ -4,6 +4,7 @@ module.exports = {
     './index.html',
     './src/**/*.{html,ts}'
   ],
+  darkMode: 'class',
   theme: {
     screens: {
       xs: '375px',
@@ -332,5 +333,34 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        '.custom-light-full': {
+          position: 'absolute',
+          inset: '0',
+          zIndex: '-10',
+          height: '100%',
+          width: '100%',
+          display: 'flex',
+          alignItems: 'center',
+          paddingInline: '5rem',
+          paddingBlock: '6rem', 
+          background: 'radial-gradient(125% 125% at 50% 30%, #fff 40%, #63e 100%)',
+        },
+        '.custom-dark-full': {
+          position: 'absolute',
+          inset: '0',
+          zIndex: '-10',
+          height: '100%',
+          width: '100%',
+          display: 'flex',
+          alignItems: 'center',
+          paddingInline: '5rem', 
+          paddingBlock: '6rem',  
+          background: 'radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%)',
+        },
+      });
+    },
+  ],
 }
