@@ -294,6 +294,7 @@ module.exports = {
       "blue-grey-700": "#455a64",
       "blue-grey-800": "#37474f",
       "blue-grey-900": "#263238",
+      "custom-dark": "#01040F",
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
@@ -345,7 +346,7 @@ module.exports = {
           display: 'flex',
           alignItems: 'center',
           paddingInline: '5rem',
-          paddingBlock: '6rem', 
+          paddingBlock: '6rem',
           background: 'radial-gradient(125% 125% at 50% 30%, #fff 40%, #63e 100%)',
         },
         '.custom-dark-full': {
@@ -356,10 +357,36 @@ module.exports = {
           width: '100%',
           display: 'flex',
           alignItems: 'center',
-          paddingInline: '5rem', 
-          paddingBlock: '6rem',  
+          paddingInline: '5rem',
+          paddingBlock: '6rem',
           background: 'radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%)',
         },
+        '.custom-light-grid-overlay': {
+          position: 'absolute',
+          inset: '0',
+          zIndex: '-20', // Moves further behind
+          pointerEvents: 'none', // Prevents blocking interactions
+          backgroundImage:
+            'linear-gradient(to right, #4f4f4f2e 1px, transparent 1px), linear-gradient(to bottom, #4f4f4f2e 1px, transparent 1px)',
+          backgroundSize: '14px 24px',
+          maskImage:
+            'radial-gradient(ellipse 80% 50% at 50% 0%, #000 70%, transparent 110%)',
+          WebkitMaskImage:
+            'radial-gradient(ellipse 80% 50% at 50% 0%, #000 70%, transparent 110%)',
+        },
+        '.custom-dark-grid-overlay': {
+          position: 'absolute',
+          inset: '0',
+          zIndex: '-20', // Keeps it behind everything
+          pointerEvents: 'none', // Ensures no interaction issues
+          backgroundImage:
+            'linear-gradient(to right, rgba(200, 200, 200, 0.3) 1px, transparent 1px), linear-gradient(to bottom, rgba(200, 200, 200, 0.3) 1px, transparent 1px)',
+          backgroundSize: '14px 24px',
+          maskImage:
+            'radial-gradient(ellipse 60% 50% at 50% 0%, #000 60%, transparent 100%)',
+          WebkitMaskImage:
+            'radial-gradient(ellipse 60% 50% at 50% 0%, #000 60%, transparent 100%)',
+        }
       });
     },
   ],

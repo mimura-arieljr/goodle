@@ -8,7 +8,10 @@ export function settingsView(settingsPage: HTMLElement, mainPage: HTMLElement) {
     const goodleText = document.getElementById("goodle-text");
     const backgroundWrap = document.querySelectorAll(".background-wrap") as NodeListOf<HTMLElement>;
 
-    const LIGHT_MODE_BACKGROUND = 
+    const LIGHT_MODE_BACKGROUND = 'custom-light-full'
+    const DARK_MODE_BACKGROUND = 'custom-dark-full'
+    const LIGHT_GRID_BACKGROUND = 'custom-light-grid-overlay'
+    const DARK_GRID_BACKGROUND = 'custom-dark-grid-overlay'
 
     settingsBtn.addEventListener("click", () => {
         // Control pages UI
@@ -40,18 +43,20 @@ export function settingsView(settingsPage: HTMLElement, mainPage: HTMLElement) {
         // Toggle dark mode
         document.body.classList.toggle("dark");
         backgroundWrap.forEach((wrap) => {
-            if (wrap.classList.contains("custom-dark-full")) {
-                // If "custom-dark-full" is present, remove it and add the other classes
-                wrap.classList.remove("custom-dark-full");
-                wrap.classList.add("custom-light-full");
+            if (wrap.classList.contains(DARK_GRID_BACKGROUND)) {
+                // If dark mode is present, remove it and add the other classes
+                wrap.classList.remove(DARK_GRID_BACKGROUND);
+                document.body.classList.remove("bg-custom-dark");
+                wrap.classList.add(LIGHT_GRID_BACKGROUND);
 
-                labelForDarkMode!.textContent = "Enable Dark Mode";
+                labelForDarkMode!.textContent = "Dark Mode";
             } else {
-                // Otherwise, add "custom-dark-full" and remove the other classes
-                wrap.classList.remove("custom-light-full");
-                wrap.classList.add("custom-dark-full");
+                // Otherwise, add dark mode and remove the other classes
+                wrap.classList.remove(LIGHT_GRID_BACKGROUND);
+                document.body.classList.add("bg-custom-dark");
+                wrap.classList.add(DARK_GRID_BACKGROUND);
 
-                labelForDarkMode!.textContent = "Disable Dark Mode";
+                labelForDarkMode!.textContent = "Light Mode";
             }
         });
     });
