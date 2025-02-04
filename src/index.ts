@@ -1,3 +1,4 @@
+import { sessionView } from "./views/sessionView.js";
 import { loginView } from "./views/loginView.js";
 import { mainView } from "./views/mainView.js";
 import { settingsView } from "./views/settingsView.js";
@@ -10,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const subjectsPage = document.getElementById("subjects-page") as HTMLElement;
     const spinner = document.getElementById("spinner") as HTMLElement;
 
+    sessionView(loginPage, mainPage);
     mainView(mainPage, settingsPage, subjectsPage);
     loginView(loginPage, mainPage, spinner);
     settingsView(settingsPage, mainPage);

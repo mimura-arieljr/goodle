@@ -1,3 +1,5 @@
+import { logout } from "../utils/sessionManager.js";
+
 export function settingsView(settingsPage: HTMLElement, mainPage: HTMLElement) {
     const settingsBtn = document.getElementById("settings-btn") as HTMLButtonElement;
     const quitBtn = document.getElementById("quit-btn") as HTMLButtonElement;
@@ -62,6 +64,7 @@ export function settingsView(settingsPage: HTMLElement, mainPage: HTMLElement) {
     });
 
     quitBtn.addEventListener("click", () => {
-        window.location.reload(); // TODO: Add implementation to quit the app, remove session
+        // TODO: Add diaglog box to verify logout
+        logout();
     });
 }
