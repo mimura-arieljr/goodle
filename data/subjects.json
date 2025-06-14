@@ -1,0 +1,30 @@
+[
+    {
+      "name": "Physics",
+      "description": "Explore the laws of nature",
+      "icon": "../assets/science.svg",
+      "color": "#5700c9",
+      "iconColor": "gray-light"
+    },
+    {
+      "name": "Computer Science",
+      "description": "Learn algorithms and data structures",
+      "icon": "../assets/science.svg",
+      "color": "#6C0345",
+      "iconColor": "#ffedc57a"
+    },
+    {
+      "name": "Physics",
+      "description": "Explore the laws of nature",
+      "icon": "../assets/science.svg",
+      "color": "#5700c9",
+      "iconColor": "gray-light"
+    },
+    {
+      "name": "Computer Science",
+      "description": "Learn algorithms and data structures",
+      "icon": "../assets/science.svg",
+      "color": "#6C0345",
+      "iconColor": "#ffedc57a"
+    }
+  ]

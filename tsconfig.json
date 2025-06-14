@@ -16,7 +16,8 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": false,
     "inlineSourceMap": true,
-    "inlineSources": true
+    "inlineSources": true,
+    "resolveJsonModule": true,
   },
   "include": [
     "src/**/*",
