@@ -1,13 +1,24 @@
 import { logout } from "../utils/sessionManager.js";
+import { saveToStorage } from "../utils/storageManager.js";
 
 export function settingsView(settingsPage: HTMLElement, mainPage: HTMLElement) {
+    // form handlers
+    const settingsForm = document.getElementById("settings-form") as HTMLFormElement;
+    const scoringCheckbox = document.getElementById("enable-scoring") as HTMLInputElement;
+    const timerInput = document.getElementById("timer") as HTMLInputElement;
+    const numQuestionsInput = document.getElementById("num-questions") as HTMLInputElement;
+
+    // button handlers
     const settingsBtn = document.getElementById("settings-btn") as HTMLButtonElement;
     const quitBtn = document.getElementById("quit-btn") as HTMLButtonElement;
     const backBtn = document.getElementById("settings-back-btn") as HTMLButtonElement;
     const darkModeBtn = document.getElementById("dark-mode-btn") as HTMLButtonElement;
     const labelForDarkMode = document.querySelector("label[for='dark-mode-btn']");
     const menuButtons = document.querySelectorAll(".menu-btn") as NodeListOf<HTMLButtonElement>;
+
+    // text and background handlers
     const goodleText = document.getElementById("goodle-text");
+    const settingsSavedText = document.getElementById("settings-saved-text");
     const backgroundWrap = document.querySelectorAll(".background-wrap") as NodeListOf<HTMLElement>;
 
     const LIGHT_MODE_BACKGROUND = 'custom-light-full'
@@ -61,6 +72,21 @@ export function settingsView(settingsPage: HTMLElement, mainPage: HTMLElement) {
                 labelForDarkMode!.textContent = "Light Mode";
             }
         });
+    });
+
+    settingsForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        // Save values to sessionStorage
+        saveToStorage("enableScoring", scoringCheckbox.checked.toString());
+        saveToStorage("timePerQuestion", timerInput.value);
+        saveToStorage("numberOfQuestions", numQuestionsInput.value);
+
+        // Show and hide the text to inform user
+        settingsSavedText?.classList.remove("hidden");
+        setTimeout(() => {
+            settingsSavedText?.classList.add("hidden");
+        }, 3000);
     });
 
     quitBtn.addEventListener("click", () => {

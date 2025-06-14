@@ -1,6 +1,8 @@
-import { loadSubjects } from "../utils/subjectsManager.js";
+import { loadSubjects, bindSubjectCardEvents } from "../utils/subjectsManager.js";
+import { imitateLoadTime } from "../utils/imitateLoadingTime.js";
+import { questionsView } from "./questionsView.js";
 
-export function subjectsView(mainPage: HTMLElement, subjectsPage: HTMLElement) {
+export async function subjectsView(mainPage: HTMLElement, subjectsPage: HTMLElement, questionsPage: HTMLElement, spinner: HTMLElement) {
     const backBtn = document.getElementById("subjects-back-btn") as HTMLButtonElement;
 
     backBtn.addEventListener("click", () => {
@@ -9,5 +11,23 @@ export function subjectsView(mainPage: HTMLElement, subjectsPage: HTMLElement) {
     });
 
     // dynamically load subjects in the UI
-    loadSubjects();
+    await loadSubjects();
+
+    // callback function to bind the card event listeners to the subject
+    // and save the chosen subject to a session storage
+    bindSubjectCardEvents(async (subjectName: string) => {
+        subjectsPage.classList.add("hidden");
+        showSpinner(spinner, questionsPage);
+        questionsView(subjectsPage, questionsPage, subjectName);
+    });
 }
+
+function showSpinner(spinner: HTMLElement, questionsPage: HTMLElement) {
+    spinner.classList.remove("hidden");
+    setTimeout(() => {
+        spinner.classList.add("hidden");
+        questionsPage.classList.remove("hidden");
+    }, imitateLoadTime());
+}
+
+

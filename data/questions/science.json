@@ -1,0 +1,354 @@
+[
+    {
+        "QuestionID": "Q1",
+        "Subject": "Science",
+        "Difficulty": "Easy",
+        "QuestionType": "Identification",
+        "Question": "Hg is the chemical symbol for which element?",
+        "Answer": "mercury"
+    },
+    {
+        "QuestionID": "Q2",
+        "Subject": "Science",
+        "Difficulty": "Easy",
+        "QuestionType": "Identification",
+        "Question": "Who was the scientist to propose the Laws of Motion?",
+        "Answer": "Isaac Newton"
+    },
+    {
+        "QuestionID": "Q3",
+        "Subject": "Science",
+        "Difficulty": "Easy",
+        "QuestionType": "Identification",
+        "Question": "Animals that eat both plants and meat are called what?",
+        "Answer": "omnivores"
+    },
+    {
+        "QuestionID": "Q4",
+        "Subject": "Science",
+        "Difficulty": "Easy",
+        "QuestionType": "Identification",
+        "Question": "Which is the hottest planet in the solar system?",
+        "Answer": "Venus"
+    },
+    {
+        "QuestionID": "Q5",
+        "Subject": "Science",
+        "Difficulty": "Easy",
+        "QuestionType": "Identification",
+        "Question": "Who was the scientist to propose the General Theory of Relativity?",
+        "Answer": "Albert Einstein"
+    },
+    {
+        "QuestionID": "Q6",
+        "Subject": "Science",
+        "Difficulty": "Easy",
+        "QuestionType": "Identification",
+        "Question": "What is the smallest unit of matter?",
+        "Answer": "atom"
+    },
+    {
+        "QuestionID": "Q7",
+        "Subject": "Science",
+        "Difficulty": "Easy",
+        "QuestionType": "Identification",
+        "Question": "What is the smallest unit of life?",
+        "Answer": "cell"
+    },
+    {
+        "QuestionID": "Q8",
+        "Subject": "Science",
+        "Difficulty": "Easy",
+        "QuestionType": "Identification",
+        "Question": "What is the element Pb?",
+        "Answer": "lead"
+    },
+    {
+        "QuestionID": "Q14",
+        "Subject": "Science",
+        "Difficulty": "Easy",
+        "QuestionType": "TrueFalse",
+        "Question": "98deg Celcius is the boiling point of water H20",
+        "Answer": "false"
+    },
+    {
+        "QuestionID": "Q15",
+        "Subject": "Science",
+        "Difficulty": "Easy",
+        "QuestionType": "TrueFalse",
+        "Question": "You can hear anything in outer space?",
+        "Answer": "false"
+    },
+    {
+        "QuestionID": "Q16",
+        "Subject": "Science",
+        "Difficulty": "Easy",
+        "QuestionType": "TrueFalse",
+        "Question": "Your hair and your nails are made from the same material.",
+        "Answer": "true"
+    },
+    {
+        "QuestionID": "Q17",
+        "Subject": "Science",
+        "Difficulty": "Easy",
+        "QuestionType": "TrueFalse",
+        "Question": "HTTP means Hypertext Transmission Protocol.",
+        "Answer": "false"
+    },
+    {
+        "QuestionID": "Q18",
+        "Subject": "Science",
+        "Difficulty": "Easy",
+        "QuestionType": "TrueFalse",
+        "Question": "The name of Apple's desktop operating system is called Mac OS.",
+        "Answer": "true"
+    },
+    {
+        "QuestionID": "Q19",
+        "Subject": "Science",
+        "Difficulty": "Easy",
+        "QuestionType": "TrueFalse",
+        "Question": ".xls is a file extension used in MS Word.",
+        "Answer": "false"
+    },
+    {
+        "QuestionID": "Q20",
+        "Subject": "Science",
+        "Difficulty": "Easy",
+        "QuestionType": "TrueFalse",
+        "Question": "UV stands for UltraViolet.",
+        "Answer": "true"
+    },
+    {
+        "QuestionID": "Q21",
+        "Subject": "Science",
+        "Difficulty": "Easy",
+        "QuestionType": "Identification",
+        "Question": "If E=Mc2 according to Einstein, what does M stand for?",
+        "Answer": "Mass"
+    },
+    {
+        "QuestionID": "Q22",
+        "Subject": "Science",
+        "Difficulty": "Easy",
+        "QuestionType": "Identification",
+        "Question": "What o is the earths atmospheric layer being destroyed by aerosols?",
+        "Answer": "Ozone"
+    },
+    {
+        "QuestionID": "Q24",
+        "Subject": "Science",
+        "Difficulty": "Easy",
+        "QuestionType": "Identification",
+        "Question": "In physics, what does DC stand for?",
+        "Answer": "Direct Current"
+    },
+    {
+        "QuestionID": "Q40",
+        "Subject": "GeneralInfo",
+        "Difficulty": "Easy",
+        "QuestionType": "Identification",
+        "Question": "Name the worlds largest ocean.",
+        "Answer": "Pacific"
+    },
+    {
+        "QuestionID": "Q41",
+        "Subject": "GeneralInfo",
+        "Difficulty": "Easy",
+        "QuestionType": "Identification",
+        "Question": "Which astrological signs symbol is a crab?",
+        "Answer": "Cancer"
+    },
+    {
+        "QuestionID": "Q42",
+        "Subject": "GeneralInfo",
+        "Difficulty": "Easy",
+        "QuestionType": "Identification",
+        "Question": "What is a group of lions called?",
+        "Answer": "pride"
+    },
+    {
+        "QuestionID": "Q43",
+        "Subject": "GeneralInfo",
+        "Difficulty": "Easy",
+        "QuestionType": "Identification",
+        "Question": "What is the last color a rainbow ROYGBIV?",
+        "Answer": "violet"
+    },
+    {
+        "QuestionID": "Q44",
+        "Subject": "GeneralInfo",
+        "Difficulty": "Easy",
+        "QuestionType": "Identification",
+        "Question": "Who was the first American president?",
+        "Answer": "George Washington"
+    },
+    {
+        "QuestionID": "Q45",
+        "Subject": "GeneralInfo",
+        "Difficulty": "Easy",
+        "QuestionType": "Identification",
+        "Question": "Who was the first Philippine president?",
+        "Answer": "Emilio Aguinaldo"
+    },
+    {
+        "QuestionID": "Q46",
+        "Subject": "GeneralInfo",
+        "Difficulty": "Easy",
+        "QuestionType": "Identification",
+        "Question": "Who was the first woman Philippine president?",
+        "Answer": "Corazon Aquino"
+    },
+    {
+        "QuestionID": "Q47",
+        "Subject": "GeneralInfo",
+        "Difficulty": "Easy",
+        "QuestionType": "Identification",
+        "Question": "Which zodiac sign is called The Maiden?",
+        "Answer": "Virgo"
+    },
+    {
+        "QuestionID": "Q54",
+        "Subject": "GeneralInfo",
+        "Difficulty": "Easy",
+        "QuestionType": "TrueFalse",
+        "Question": "Cornea is the part of the human eye that controls the amount of light that passes through the pupil.",
+        "Answer": "false"
+    },
+    {
+        "QuestionID": "Q55",
+        "Subject": "GeneralInfo",
+        "Difficulty": "Easy",
+        "QuestionType": "TrueFalse",
+        "Question": "In chess, a bishop can move diagonally.",
+        "Answer": "true"
+    },
+    {
+        "QuestionID": "Q56",
+        "Subject": "GeneralInfo",
+        "Difficulty": "Easy",
+        "QuestionType": "TrueFalse",
+        "Question": "The Eiffel Tower is in Germany.",
+        "Answer": "false"
+    },
+    {
+        "QuestionID": "Q57",
+        "Subject": "GeneralInfo",
+        "Difficulty": "Easy",
+        "QuestionType": "TrueFalse",
+        "Question": "Japanese alphabet has two types, Katakana and Hiragana.",
+        "Answer": "false"
+    },
+    {
+        "QuestionID": "Q58",
+        "Subject": "GeneralInfo",
+        "Difficulty": "Easy",
+        "QuestionType": "TrueFalse",
+        "Question": "UST has a lion as their university mascot.",
+        "Answer": "false"
+    },
+    {
+        "QuestionID": "Q59",
+        "Subject": "GeneralInfo",
+        "Difficulty": "Easy",
+        "QuestionType": "TrueFalse",
+        "Question": "Japanese sake is made from rice.",
+        "Answer": "true"
+    },
+    {
+        "QuestionID": "Q60",
+        "Subject": "GeneralInfo",
+        "Difficulty": "Easy",
+        "QuestionType": "TrueFalse",
+        "Question": "Smirnoff mule is a beer.",
+        "Answer": "false"
+    },
+    {
+        "QuestionID": "Q20",
+        "Subject": "Science",
+        "Difficulty": "Hard",
+        "QuestionType": "Identification",
+        "Question": "Optics is the study of what?",
+        "Answer": "Light"
+    },
+    {
+        "QuestionID": "Q21",
+        "Subject": "Science",
+        "Difficulty": "Hard",
+        "QuestionType": "Identification",
+        "Question": "Which computer company invented the first floppy disks, hard disk drives, and DRAMS?",
+        "Answer": "IBM"
+    },
+    {
+        "QuestionID": "Q22",
+        "Subject": "Science",
+        "Difficulty": "Hard",
+        "QuestionType": "Identification",
+        "Question": "In what type of matter are atoms most tightly packed?",
+        "Answer": "solid"
+    },
+    {
+        "QuestionID": "Q23",
+        "Subject": "Science",
+        "Difficulty": "Hard",
+        "QuestionType": "Identification",
+        "Question": "What instrument is used to measure wind speed?",
+        "Answer": "anemometer"
+    },
+    {
+        "QuestionID": "Q33",
+        "Subject": "Science",
+        "Difficulty": "Hard",
+        "QuestionType": "TrueFalse",
+        "Question": "Chloroplasts can be found in animal cells.",
+        "Answer": "false"
+    },
+    {
+        "QuestionID": "Q34",
+        "Subject": "Science",
+        "Difficulty": "Hard",
+        "QuestionType": "TrueFalse",
+        "Question": "Rainforests are considered temperate climate regions.",
+        "Answer": "true"
+    },
+    {
+        "QuestionID": "Q35",
+        "Subject": "Science",
+        "Difficulty": "Hard",
+        "QuestionType": "TrueFalse",
+        "Question": "The graduated cylinder is a tool thats used to measure fluid volume.",
+        "Answer": "true"
+    },
+    {
+        "QuestionID": "Q36",
+        "Subject": "Science",
+        "Difficulty": "Hard",
+        "QuestionType": "TrueFalse",
+        "Question": "Gregorie Mendel is considered the founder of the modern science of genetics?",
+        "Answer": "false"
+    },
+    {
+        "QuestionID": "Q37",
+        "Subject": "Science",
+        "Difficulty": "Hard",
+        "QuestionType": "TrueFalse",
+        "Question": "Johannes Kepler best known for Laws of Thermodynamics.",
+        "Answer": "false"
+    },
+    {
+        "QuestionID": "Q38",
+        "Subject": "Science",
+        "Difficulty": "Hard",
+        "QuestionType": "TrueFalse",
+        "Question": "Helium becomes a superfluid when cooled to absolute zero.",
+        "Answer": "true"
+    },
+    {
+        "QuestionID": "Q39",
+        "Subject": "Science",
+        "Difficulty": "Hard",
+        "QuestionType": "TrueFalse",
+        "Question": "Spiders have 6 legs",
+        "Answer": "false"
+    }
+]

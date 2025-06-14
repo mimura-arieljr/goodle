@@ -17,21 +17,4 @@ export function mainView(mainPage: HTMLElement, settingsPage: HTMLElement, subje
         mainPage.classList.add("hidden");
         settingsPage.classList.remove("hidden");
     });
-
-
-    // Function to display a question dynamically (for demo purposes)
-    function displayQuestion() {
-        const questionContainer = document.getElementById("question-container");
-        if (questionContainer) {
-            questionContainer.innerHTML = `
-            <p>What is the capital of France?</p>
-            <ul>
-                <li>A. Berlin</li>
-                <li>B. Madrid</li>
-                <li>C. Paris</li>
-                <li>D. Rome</li>
-            </ul>
-        `;
-        }
-    }
 }

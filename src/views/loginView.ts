@@ -1,6 +1,7 @@
 import { encryptText } from "../utils/stringManager.js";
 import { login } from "../utils/sessionManager.js";
 import { secrets } from "../libs/secrets.js";
+import { imitateLoadTime } from "../utils/imitateLoadingTime.js";
 
 export function loginView(loginPage: HTMLElement, mainPage: HTMLElement, spinner: HTMLElement) {
     const loginForm = document.getElementById("login-form") as HTMLFormElement;
@@ -28,8 +29,4 @@ function handleLogin(loginPage: HTMLElement, mainPage: HTMLElement, spinner: HTM
         spinner.classList.add("hidden");
         mainPage.classList.remove("hidden");
     }, imitateLoadTime());
-}
-
-function imitateLoadTime(): number {
-    return Math.floor(Math.random() * 2000) + 1000;
 }
