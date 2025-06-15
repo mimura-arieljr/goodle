@@ -389,5 +389,6 @@ module.exports = {
         }
       });
     },
-  ],
+    require('tailwind-scrollbar-hide'),
+  ]
 }
