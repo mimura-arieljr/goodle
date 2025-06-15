@@ -17,17 +17,20 @@ export async function subjectsView(mainPage: HTMLElement, subjectsPage: HTMLElem
     // and save the chosen subject to a session storage
     bindSubjectCardEvents(async (subjectName: string) => {
         subjectsPage.classList.add("hidden");
-        showSpinner(spinner, questionsPage);
+        await showSpinner(spinner, questionsPage);
         questionsView(subjectsPage, questionsPage, subjectName);
     });
 }
 
-function showSpinner(spinner: HTMLElement, questionsPage: HTMLElement) {
-    spinner.classList.remove("hidden");
-    setTimeout(() => {
-        spinner.classList.add("hidden");
-        questionsPage.classList.remove("hidden");
-    }, imitateLoadTime());
+function showSpinner(spinner: HTMLElement, questionsPage: HTMLElement): Promise<void> {
+    return new Promise((resolve) => {
+        spinner.classList.remove("hidden");
+        setTimeout(() => {
+            spinner.classList.add("hidden");
+            questionsPage.classList.remove("hidden");
+            resolve();
+        }, imitateLoadTime());
+    });
 }
 
 

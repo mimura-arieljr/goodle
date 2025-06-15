@@ -1,6 +1,7 @@
 import { BaseQuestionType } from "../types/BaseQuestionType.js";
 import { prepareQuestionSet } from "../utils/questionsManager.js";
 import { isAnswerValid } from "../utils/answersManager.js";
+import { startCountdownTimer } from "../utils/timerManager.js";
 
 const answerInput = document.getElementById("answer-input") as HTMLInputElement;
 const correctAnswer = document.getElementById("correct-answer-text") as HTMLElement;
@@ -18,6 +19,7 @@ export async function questionsView(subjectsPage: HTMLElement, questionsPage: HT
     // Prepare and show the questions
     const questions = await prepareQuestionSet(subject);
     showQuestion(currentQuestionIndex, questions);
+    startCountdownTimer();
 
     // Handle answer submit
     submitBtn.addEventListener("click", () => {
@@ -46,6 +48,7 @@ export async function questionsView(subjectsPage: HTMLElement, questionsPage: HT
         currentQuestionIndex++;
         if (currentQuestionIndex < questions.length) {
             showQuestion(currentQuestionIndex, questions);
+            startCountdownTimer();
         } else {
             console.log("All questions completed!");
             // e.g., show results or redirect
