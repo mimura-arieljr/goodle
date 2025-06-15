@@ -33,7 +33,7 @@ export async function prepareQuestionSet(subjectName: string): Promise<BaseQuest
 }
 
 async function loadQuestionsBySubject(subjectName: string): Promise<BaseQuestionType[]> {
-    const res = await fetch(`/data/questions/${subjectName.toLowerCase()}.json`);
+    const res = await fetch(`data/questions/${subjectName.toLowerCase()}.json`);
     const questions = await res.json();
     return questions;
 }
