@@ -11,67 +11,72 @@ export async function questionsView(subjectsPage: HTMLElement, questionsPage: HT
     const submitBtn = document.getElementById("answer-submit-btn") as HTMLButtonElement;
     let currentQuestionIndex = 0;
 
+    // Event listeners
     backBtn.addEventListener("click", () => {
         subjectsPage.classList.remove("hidden");
         questionsPage.classList.add("hidden");
     });
 
+    submitBtn.addEventListener("click", handleAnswerSubmission);
+
     // Prepare and show the questions
     const questions = await prepareQuestionSet(subject);
     showQuestion(currentQuestionIndex, questions);
-    startCountdownTimer();
 
     // Handle answer submit
-    submitBtn.addEventListener("click", () => {
+    function handleAnswerSubmission() {
         const userAnswer = answerInput.value;
         const isValid = isAnswerValid(userAnswer, questions[currentQuestionIndex]);
 
         showAnswerFeedback(isValid);
 
         if (!isValid) {
-            correctAnswer.classList.remove("hidden");
-            correctAnswer.innerText = questions[currentQuestionIndex].Answer;
+            correctAnswer.classList.remove("invisible");
+            correctAnswer.innerText = `Correct Answer: ${questions[currentQuestionIndex].Answer}`;
         }
 
         submitBtn.disabled = true;
 
         setTimeout(() => {
             answerInput.classList.remove("border-red", "border-green");
-            correctAnswer.classList.add("hidden");
+            correctAnswer.classList.add("invisible");
             submitBtn.disabled = false;
 
             moveToNextQuestion();
         }, 2000);
-    });
+    }
 
     function moveToNextQuestion() {
         currentQuestionIndex++;
         if (currentQuestionIndex < questions.length) {
             showQuestion(currentQuestionIndex, questions);
-            startCountdownTimer();
         } else {
             console.log("All questions completed!");
             // e.g., show results or redirect
         }
     }
-}
 
-function showQuestion(index: number, questions: BaseQuestionType[]) {
-    const questionTextEl = document.getElementById("question-text") as HTMLElement;
-    const choicesContainer = document.getElementById("choices-container") as HTMLElement;
+    function showQuestion(index: number, questions: BaseQuestionType[]) {
+        const questionTextEl = document.getElementById("question-text") as HTMLElement;
+        const choicesContainer = document.getElementById("choices-container") as HTMLElement;
 
-    const q = questions[index];
-    questionTextEl.innerText = q.Question;
-    answerInput.value = "";
-    choicesContainer.innerHTML = "";
+        const q = questions[index];
+        questionTextEl.innerText = q.Question;
+        answerInput.value = "";
+        choicesContainer.innerHTML = "";
 
-    // TODO: Handle multiple choice
-}
+        // TODO: Handle multiple choice
 
-function showAnswerFeedback(isCorrect: boolean) {
-    if (isCorrect) {
-        answerInput.classList.add("border-green");
-    } else {
-        answerInput.classList.add("border-red");
+        // Start countdown timer on each question
+        startCountdownTimer(handleAnswerSubmission);
     }
+
+    function showAnswerFeedback(isCorrect: boolean) {
+        if (isCorrect) {
+            answerInput.classList.add("border-green");
+        } else {
+            answerInput.classList.add("border-red");
+        }
+    }
+
 }

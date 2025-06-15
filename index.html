@@ -185,7 +185,7 @@
         <!----------------- Subjects Page ------------------------>
         <div id="subjects-page" class="px-4 container mx-auto my-auto hidden">
             <button id="subjects-back-btn"
-                class="bg-transparent text-gray-light text-xl absolute top-4 left-4 hover:-translate-x-2 focus:-translate-x-2 transition-transform duration-30">
+                class="bg-transparent text-grey-800 dark:text-gray-light text-xl absolute top-4 left-4 hover:-translate-x-2 focus:-translate-x-2 transition-transform duration-30">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -197,7 +197,7 @@
         <!----------------- Questions Page ------------------------>
         <div id="questions-page" class="page hidden">
             <button id="questions-back-btn"
-                class="bg-transparent text-gray-light text-xl absolute top-4 left-4 hover:-translate-x-2 focus:-translate-x-2 transition-transform duration-30">
+                class="bg-transparent text-grey-800 dark:text-gray-light text-xl absolute top-4 left-4 hover:-translate-x-2 focus:-translate-x-2 transition-transform duration-30">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -206,9 +206,9 @@
             </button>
             <div class="flex justify-center items-center h-full w-full px-4 py-10">
                 <div id="question-card"
-                    class="relative w-full max-w-4xl min-w-[400px] min-h-[270px] flex flex-col justify-center bg-yellow-100 dark:bg-blue-grey-600 rounded-lg shadow-lg p-6 space-y-6">
+                    class="relative w-full max-w-4xl min-w-[400px] min-h-[270px] flex flex-col justify-center bg-yellow-100 dark:bg-blue-grey-600 rounded-lg shadow-lg p-6">
                     <!-- Timer Placeholder -->
-                    <div class="absolute top-4 right-4 text-xl font-anonymouspro text-red-600 dark:text-red-200">
+                    <div class="absolute top-4 right-4 text-xl font-anonymouspro text-green-600 dark:text-green-200">
                         <span id="countdown-timer">00:00</span>
                     </div>
 
@@ -218,12 +218,12 @@
                     </div>
 
                     <!-- Choices Section (only for multiple choice) -->
-                    <div id="choices-container" class="space-y-2">
+                    <div id="choices-container" class="">
                         <!-- Choices will be dynamically added here -->
                     </div>
 
                     <!-- Answer Input & Submit Button -->
-                    <div class="flex space-x-4 mt-4">
+                    <div class="flex space-x-4 mt-8">
                         <input id="answer-input" type="text"
                             class="flex-grow max-w-[75%] p-1 rounded-lg bg-white border dark:bg-grey-200 text-gray-900 dark:text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500" />
                         <button id="answer-submit-btn"
@@ -231,8 +231,10 @@
                             Submit
                         </button>
                     </div>
-                    <div id="correct-answer-text" class="text-sm font-anonymouspro text-red-600 dark:text-red-200 hidden">
-                        <!-- Correct Answer will be injected here-->
+                    <div id="correct-answer-text"
+                        class="text-sm font-anonymouspro text-red-600 dark:text-red-200 mt-2 invisble">
+                        <!-- Correct answer will be dynamically added here -->
+                        <!-- Use invisible instead of hidden to reserve the space always, but hide the content visually -->
                     </div>
                 </div>
             </div>

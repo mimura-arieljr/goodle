@@ -1,7 +1,8 @@
 let timerIntervalId: number | null = null;
 
-export function startCountdownTimer() {
+export function startCountdownTimer(onTimeUp?: () => void) {
     const timerEl = document.getElementById("countdown-timer");
+
     if (!timerEl) {
         console.warn("Timer element not found");
         return;
@@ -18,16 +19,19 @@ export function startCountdownTimer() {
     })();
 
     timerEl.textContent = formatTime(timeLeft);
-    console.log(timerEl.textContent);
+    timerEl.style.color = '';
 
     timerIntervalId = window.setInterval(() => {
         timeLeft--;
         timerEl.textContent = formatTime(timeLeft);
 
+        if (timeLeft <= 5) {
+            timerEl.style.color = 'red';
+        }
+
         if (timeLeft <= 0) {
             clearInterval(timerIntervalId!);
-            console.log("⏰ Time is up!");
-            // Optional: auto-submit or move on here
+            onTimeUp?.(); // callback function to handle auto submit on time up
         }
     }, 1000);
 }
