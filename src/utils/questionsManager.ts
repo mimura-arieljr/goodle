@@ -1,13 +1,15 @@
 import { BaseQuestionType } from "../types/BaseQuestionType.js";
 import { getFromStorage } from "./storageManager.js";
 
+const DEFAULT_QUESTION_SIZE = 10;
+
 export async function prepareQuestionSet(subjectName: string): Promise<BaseQuestionType[]> {
     try {
         // step 0: Get all questions of a given subject
         const allQuestions = await loadQuestionsBySubject(subjectName);
 
         // step 1: Check for desired number of questions
-        const numberOfQuestions = parseInt(getFromStorage('numberOfQuestions') ?? '10', 5); // defaults to 10 if user did not set
+        const numberOfQuestions = getNumberFromStorage('numberOfQuestions', DEFAULT_QUESTION_SIZE);
 
         // step 2: Shuffle the questions
         const shuffledQuestions = shuffleQuestions(allQuestions);
@@ -21,18 +23,16 @@ export async function prepareQuestionSet(subjectName: string): Promise<BaseQuest
                 break;
             }
         }
-        // Convert the Set back to an array
+        // Convert the Set back to an array 
         const finalQuestionsArray = Array.from(finalQuestionsSet);
-        console.table(finalQuestionsArray);
         return finalQuestionsArray;
-    } catch(error) {
+    } catch (error) {
         console.error('Error preparing question set:', error);
         throw error;
     }
 }
 
 async function loadQuestionsBySubject(subjectName: string): Promise<BaseQuestionType[]> {
-    console.log(`getting questions from ${subjectName}`);
     const res = await fetch(`/data/questions/${subjectName.toLowerCase()}.json`);
     const questions = await res.json();
     return questions;
@@ -45,4 +45,10 @@ function shuffleQuestions(questions: BaseQuestionType[]): BaseQuestionType[] {
         [questions[i], questions[j]] = [questions[j], questions[i]];
     }
     return questions;
+}
+
+function getNumberFromStorage(key: string, fallback: number): number {
+  const val = getFromStorage(key);
+  const parsed = parseInt(val ?? '', 10);
+  return isNaN(parsed) ? fallback : parsed;
 }

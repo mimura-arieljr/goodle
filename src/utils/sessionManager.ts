@@ -1,3 +1,5 @@
+import { removeFromStorage, saveToStorage, getFromStorage } from "./storageManager.js";
+
 const SESSION_DURATION = 1000 * 60 * 30;
 
 const encodeSession = (timestamp: number) => btoa(timestamp.toString()); // Base64 encode
@@ -5,12 +7,12 @@ const decodeSession = (encoded: string) => parseInt(atob(encoded));
 
 export const login = () => {
     const now = Date.now();
-    sessionStorage.removeItem("userIsIn");
-    sessionStorage.setItem("userIsIn", encodeSession(now));
+    removeFromStorage("userIsIn");
+    saveToStorage("userIsIn", encodeSession(now));
 };
 
 export const isSessionValid = () => {
-    const encoded = sessionStorage.getItem("userIsIn");
+    const encoded = getFromStorage("userIsIn");
     if (!encoded) return false;
 
     const now = Date.now();
@@ -25,6 +27,6 @@ export const validateSession = () => {
 }
 
 export const logout = () => {
-    sessionStorage.removeItem("userIsIn");
+    sessionStorage.clear();
     window.location.reload();
 };

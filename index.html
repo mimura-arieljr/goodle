@@ -206,17 +206,14 @@
             </button>
             <div class="flex justify-center items-center h-full w-full px-4 py-10">
                 <div id="question-card"
-                    class="relative w-full max-w-4xl min-w-[400px] min-h-[320px] flex flex-col bg-grey-50 dark:bg-grey-400 rounded-lg shadow-lg p-6 space-y-6">
+                    class="relative w-full max-w-4xl min-w-[400px] min-h-[270px] flex flex-col justify-center bg-yellow-100 dark:bg-blue-grey-600 rounded-lg shadow-lg p-6 space-y-6">
                     <!-- Timer Placeholder -->
-                    <div class="absolute top-4 right-4 text-sm font-anonymouspro text-pink-200">
+                    <div class="absolute top-4 right-4 text-xl font-anonymouspro text-red-600 dark:text-red-200">
                         <span id="timer">00:00</span>
                     </div>
 
                     <!-- Question Text -->
                     <div id="question-text" class="text-xl font-anonymouspro text-gray-800 dark:text-gray-light">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic officia nulla perspiciatis
-                            velit excepturi ipsa consequuntur deleniti totam nisi, assumenda tempore maxime omnis ut
-                            incidunt illum sed cumque, eveniet porro?</p>
                         <!-- Question will be injected here -->
                     </div>
 
@@ -226,13 +223,16 @@
                     </div>
 
                     <!-- Answer Input & Submit Button -->
-                    <div class="flex space-x-4 mt-auto">
+                    <div class="flex space-x-4 mt-4">
                         <input id="answer-input" type="text"
-                            class="flex-grow max-w-[75%] p-1 rounded-lg bg-white border border-gray-300 dark:bg-blue-150 dark:border-gray-light text-gray-900 dark:text-gray-light placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                        <button id="submit-btn"
+                            class="flex-grow max-w-[75%] p-1 rounded-lg bg-white border dark:bg-grey-200 text-gray-900 dark:text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                        <button id="answer-submit-btn"
                             class="py-2 px-4 bg-orange text-white rounded-lg font-anonymouspro hover:bg-orange-600 transition">
                             Submit
                         </button>
+                    </div>
+                    <div id="correct-answer-text" class="text-sm font-anonymouspro text-red-600 dark:text-red-200 hidden">
+                        <!-- Correct Answer will be injected here-->
                     </div>
                 </div>
             </div>
