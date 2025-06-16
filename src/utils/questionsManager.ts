@@ -1,5 +1,5 @@
 import { BaseQuestionType } from "../types/BaseQuestionType.js";
-import { getFromStorage } from "./storageManager.js";
+import { getNumberFromStorage } from "./storageManager.js";
 
 const DEFAULT_QUESTION_SIZE = 10;
 
@@ -47,8 +47,3 @@ function shuffleQuestions(questions: BaseQuestionType[]): BaseQuestionType[] {
     return questions;
 }
 
-function getNumberFromStorage(key: string, fallback: number): number {
-  const val = getFromStorage(key);
-  const parsed = parseInt(val ?? '', 10);
-  return isNaN(parsed) ? fallback : parsed;
-}

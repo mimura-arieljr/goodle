@@ -9,3 +9,9 @@ export function removeFromStorage(key: string): void {
 
 export const getFromStorage = (key: string): string | null =>
   sessionStorage.getItem(key);
+
+export function getNumberFromStorage(key: string, fallback: number): number {
+  const val = getFromStorage(key);
+  const parsed = parseInt(val ?? '', 10);
+  return isNaN(parsed) ? fallback : parsed;
+}
