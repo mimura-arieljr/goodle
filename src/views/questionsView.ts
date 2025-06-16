@@ -2,13 +2,17 @@ import { BaseQuestionType } from "../types/BaseQuestionType.js";
 import { prepareQuestionSet } from "../utils/questionsManager.js";
 import { isAnswerValid } from "../utils/answersManager.js";
 import { startCountdownTimer } from "../utils/timerManager.js";
+import { resultsView } from "./resultsView.js";
 
 const answerInput = document.getElementById("answer-input") as HTMLInputElement;
 const correctAnswer = document.getElementById("correct-answer-text") as HTMLElement;
+const CORRECT_BORDER_COLOR = "border-green";
+const INCORRECT_BORDER_COLOR = "border-red";
 
 export async function questionsView(subjectsPage: HTMLElement, questionsPage: HTMLElement, subject: string) {
     const backBtn = document.getElementById("questions-back-btn") as HTMLButtonElement;
     const submitBtn = document.getElementById("answer-submit-btn") as HTMLButtonElement;
+    let score = 0;
     let currentQuestionIndex = 0;
 
     // Event listeners
@@ -17,7 +21,10 @@ export async function questionsView(subjectsPage: HTMLElement, questionsPage: HT
         questionsPage.classList.add("hidden");
     });
 
-    submitBtn.addEventListener("click", handleAnswerSubmission);
+    // Use onclick instead of eventListener
+    // Avoid listener getting stacked multiple times on the same button. 
+    // This causes handleAnswerSubmission() to be called more than once — even with outdated state. 
+    submitBtn.onclick = handleAnswerSubmission;
 
     // Prepare and show the questions
     const questions = await prepareQuestionSet(subject);
@@ -28,7 +35,7 @@ export async function questionsView(subjectsPage: HTMLElement, questionsPage: HT
         const userAnswer = answerInput.value;
         const isValid = isAnswerValid(userAnswer, questions[currentQuestionIndex]);
 
-        showAnswerFeedback(isValid);
+        handleAnswerFeedback(isValid);
 
         if (!isValid) {
             correctAnswer.classList.remove("invisible");
@@ -38,7 +45,7 @@ export async function questionsView(subjectsPage: HTMLElement, questionsPage: HT
         submitBtn.disabled = true;
 
         setTimeout(() => {
-            answerInput.classList.remove("border-red", "border-green");
+            answerInput.classList.remove(INCORRECT_BORDER_COLOR, CORRECT_BORDER_COLOR);
             correctAnswer.classList.add("invisible");
             submitBtn.disabled = false;
 
@@ -52,7 +59,7 @@ export async function questionsView(subjectsPage: HTMLElement, questionsPage: HT
             showQuestion(currentQuestionIndex, questions);
         } else {
             console.log("All questions completed!");
-            // e.g., show results or redirect
+            resultsView(subjectsPage, questionsPage, score);
         }
     }
 
@@ -71,11 +78,12 @@ export async function questionsView(subjectsPage: HTMLElement, questionsPage: HT
         startCountdownTimer(handleAnswerSubmission);
     }
 
-    function showAnswerFeedback(isCorrect: boolean) {
+    function handleAnswerFeedback(isCorrect: boolean) {
         if (isCorrect) {
-            answerInput.classList.add("border-green");
+            answerInput.classList.add(CORRECT_BORDER_COLOR);
+            score++;
         } else {
-            answerInput.classList.add("border-red");
+            answerInput.classList.add(INCORRECT_BORDER_COLOR);
         }
     }
 
