@@ -9,7 +9,8 @@ export async function prepareQuestionSet(subjectName: string): Promise<BaseQuest
         const allQuestions = await loadQuestionsBySubject(subjectName);
 
         // step 1: Check for desired number of questions
-        const numberOfQuestions = getNumberFromStorage('numberOfQuestions', DEFAULT_QUESTION_SIZE);
+        const numberFromStorage = getNumberFromStorage('numberOfQuestions', DEFAULT_QUESTION_SIZE);
+        const numberOfQuestions = numberFromStorage > allQuestions.length ? allQuestions.length : numberFromStorage;
 
         // step 2: Shuffle the questions
         const shuffledQuestions = shuffleQuestions(allQuestions);
