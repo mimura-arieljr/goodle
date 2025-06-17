@@ -1,4 +1,4 @@
-import { BaseQuestionType, QuestionTypes } from "../types/BaseQuestionType"
+import { BaseQuestionType, QuestionTypes } from "../types/BaseQuestionType.js"
 
 export function isAnswerValid(userAnswer: string, question: BaseQuestionType): boolean {
     const correctAnswer = question.Answer;
