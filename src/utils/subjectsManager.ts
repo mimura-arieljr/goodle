@@ -22,8 +22,8 @@ export async function loadSubjects() {
         <div class="flex justify-end">
           <img src="${subject.icon}" class="h-16 w-16 ${subject.iconColor}" />
         </div>
-        <p class="pt-16 text-2xl font-anonymouspro text-white">${subject.name}</p>
-        <p class="pt-4 text-sm font-anonymouspro text-gray-light">${subject.description}</p>
+        <p class="pt-16 text-2xl font-anonymouspro text-custom-dark">${subject.name}</p>
+        <p class="pt-4 text-sm font-anonymouspro text-blue-grey-900">${subject.description}</p>
       `;
         container.appendChild(card);
     });

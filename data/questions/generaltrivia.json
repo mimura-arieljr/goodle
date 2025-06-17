@@ -1,0 +1,234 @@
+[
+  {
+    "QuestionID": "Q40",
+    "Category": "General Trivia",
+    "Difficulty": "Easy",
+    "QuestionType": "Identification",
+    "Question": "Name the worlds largest ocean.",
+    "Answer": "Pacific"
+  },
+  {
+    "QuestionID": "Q41",
+    "Category": "General Trivia",
+    "Difficulty": "Easy",
+    "QuestionType": "Identification",
+    "Question": "Which astrological signs symbol is a crab?",
+    "Answer": "Cancer"
+  },
+  {
+    "QuestionID": "Q42",
+    "Category": "General Trivia",
+    "Difficulty": "Easy",
+    "QuestionType": "Identification",
+    "Question": "What is a group of lions called?",
+    "Answer": "pride"
+  },
+  {
+    "QuestionID": "Q43",
+    "Category": "General Trivia",
+    "Difficulty": "Easy",
+    "QuestionType": "Identification",
+    "Question": "What is the last color a rainbow ROYGBIV?",
+    "Answer": "violet"
+  },
+  {
+    "QuestionID": "Q44",
+    "Category": "General Trivia",
+    "Difficulty": "Easy",
+    "QuestionType": "Identification",
+    "Question": "Who was the first American president?",
+    "Answer": "George Washington"
+  },
+  {
+    "QuestionID": "Q45",
+    "Category": "General Trivia",
+    "Difficulty": "Easy",
+    "QuestionType": "Identification",
+    "Question": "Who was the first Philippine president?",
+    "Answer": "Emilio Aguinaldo"
+  },
+  {
+    "QuestionID": "Q46",
+    "Category": "General Trivia",
+    "Difficulty": "Easy",
+    "QuestionType": "Identification",
+    "Question": "Who was the first woman Philippine president?",
+    "Answer": "Corazon Aquino"
+  },
+  {
+    "QuestionID": "Q47",
+    "Category": "General Trivia",
+    "Difficulty": "Easy",
+    "QuestionType": "Identification",
+    "Question": "Which zodiac sign is called The Maiden?",
+    "Answer": "Virgo"
+  },
+  {
+    "QuestionID": "Q54",
+    "Category": "General Trivia",
+    "Difficulty": "Easy",
+    "QuestionType": "TrueFalse",
+    "Question": "Cornea is the part of the human eye that controls the amount of light that passes through the pupil.",
+    "Answer": "false"
+  },
+  {
+    "QuestionID": "Q55",
+    "Category": "General Trivia",
+    "Difficulty": "Easy",
+    "QuestionType": "TrueFalse",
+    "Question": "In chess, a bishop can move diagonally.",
+    "Answer": "true"
+  },
+  {
+    "QuestionID": "Q56",
+    "Category": "General Trivia",
+    "Difficulty": "Easy",
+    "QuestionType": "TrueFalse",
+    "Question": "The Eiffel Tower is in Germany.",
+    "Answer": "false"
+  },
+  {
+    "QuestionID": "Q57",
+    "Category": "General Trivia",
+    "Difficulty": "Easy",
+    "QuestionType": "TrueFalse",
+    "Question": "Japanese alphabet has two types, Katakana and Hiragana.",
+    "Answer": "false"
+  },
+  {
+    "QuestionID": "Q58",
+    "Category": "General Trivia",
+    "Difficulty": "Easy",
+    "QuestionType": "TrueFalse",
+    "Question": "UST has a lion as their university mascot.",
+    "Answer": "false"
+  },
+  {
+    "QuestionID": "Q59",
+    "Category": "General Trivia",
+    "Difficulty": "Easy",
+    "QuestionType": "TrueFalse",
+    "Question": "Japanese sake is made from rice.",
+    "Answer": "true"
+  },
+  {
+    "QuestionID": "Q60",
+    "Category": "General Trivia",
+    "Difficulty": "Easy",
+    "QuestionType": "TrueFalse",
+    "Question": "Smirnoff mule is a beer.",
+    "Answer": "false"
+  },
+    {
+    "QuestionID": "Q61",
+    "Category": "General Trivia",
+    "Difficulty": "Hard",
+    "QuestionType": "Identification",
+    "Question": "What musical term is indicates a chord where the notes are played one after another rather than all together?",
+    "Answer": "Arpeggio"
+  },
+  {
+    "QuestionID": "Q62",
+    "Category": "General Trivia",
+    "Difficulty": "Hard",
+    "QuestionType": "Identification",
+    "Question": "What color does gold leaf appear if you hold it up to the light?",
+    "Answer": "Green"
+  },
+  {
+    "QuestionID": "Q63",
+    "Category": "General Trivia",
+    "Difficulty": "Hard",
+    "QuestionType": "Identification",
+    "Question": "What is the capital city of Paraguay?",
+    "Answer": "Asuncion"
+  },
+  {
+    "QuestionID": "Q64",
+    "Category": "General Trivia",
+    "Difficulty": "Hard",
+    "QuestionType": "Identification",
+    "Question": "Which instrument is associated with Earl Powell?",
+    "Answer": "Piano"
+  },
+  {
+    "QuestionID": "Q65",
+    "Category": "General Trivia",
+    "Difficulty": "Hard",
+    "QuestionType": "Identification",
+    "Question": "In a Glossectomy, which body part is removed?",
+    "Answer": "tongue"
+  },
+  {
+    "QuestionID": "Q66",
+    "Category": "General Trivia",
+    "Difficulty": "Hard",
+    "QuestionType": "Identification",
+    "Question": "Elon Musk is the CEO of which famous brand?",
+    "Answer": "Tesla"
+  },
+  {
+    "QuestionID": "Q67",
+    "Category": "General Trivia",
+    "Difficulty": "Hard",
+    "QuestionType": "Identification",
+    "Question": "What is the technical term for a lie detector?",
+    "Answer": "polygraph"
+  },
+  {
+    "QuestionID": "Q68",
+    "Category": "General Trivia",
+    "Difficulty": "Hard",
+    "QuestionType": "Identification",
+    "Question": "Which is the hardest natural substance found on earth?",
+    "Answer": "diamond"
+  },
+  {
+    "QuestionID": "Q75",
+    "Category": "General Trivia",
+    "Difficulty": "Hard",
+    "QuestionType": "TrueFalse",
+    "Question": "Two atomic bombs were dropped in Nagasaki and Hiroshima Japan.",
+    "Answer": "true"
+  },
+  {
+    "QuestionID": "Q76",
+    "Category": "General Trivia",
+    "Difficulty": "Hard",
+    "QuestionType": "TrueFalse",
+    "Question": "The first person to step on the moon was Galileo Galilei.",
+    "Answer": "false"
+  },
+  {
+    "QuestionID": "Q77",
+    "Category": "General Trivia",
+    "Difficulty": "Hard",
+    "QuestionType": "TrueFalse",
+    "Question": "The sun in the Milky Way galaxy is considered a star.",
+    "Answer": "true"
+  },
+  {
+    "QuestionID": "Q78",
+    "Category": "General Trivia",
+    "Difficulty": "Hard",
+    "QuestionType": "TrueFalse",
+    "Question": "Lightyear is a measure of time.",
+    "Answer": "false"
+  },
+  {
+    "QuestionID": "Q79",
+    "Category": "General Trivia",
+    "Difficulty": "Hard",
+    "QuestionType": "TrueFalse",
+    "Question": "When in Norway, you can go visit the city of Stockholm.",
+    "Answer": "false"
+  },
+  {
+    "QuestionID": "Q80",
+    "Category": "General Trivia",
+    "Difficulty": "Hard",
+    "QuestionType": "TrueFalse",
+    "Question": "Mount Everest is located in Nepal.",
+    "Answer": "true"
+  }
+]

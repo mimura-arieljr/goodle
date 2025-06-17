@@ -3,28 +3,28 @@
       "name": "Science",
       "description": "Explore the laws of nature",
       "icon": "assets/science.svg",
-      "color": "#5700c9",
+      "color": "#C0B6DB",
       "iconColor": "gray-light"
     },
     {
-      "name": "Computer Science",
-      "description": "Learn algorithms and data structures",
-      "icon": "assets/science.svg",
-      "color": "#6C0345",
+      "name": "AWS",
+      "description": "AWS Cloud Practitioner Practice Exam",
+      "icon": "assets/aws.svg",
+      "color": "#FEED80",
       "iconColor": "#ffedc57a"
     },
     {
-      "name": "Physics",
-      "description": "Explore the laws of nature",
-      "icon": "assets/science.svg",
-      "color": "#5700c9",
+      "name": "General Trivia",
+      "description": "Test your knowledge for everything under the sun",
+      "icon": "assets/generaltrivia.svg",
+      "color": "#BEDE8B",
       "iconColor": "gray-light"
     },
     {
-      "name": "Computer Science",
-      "description": "Learn algorithms and data structures",
-      "icon": "assets/science.svg",
-      "color": "#6C0345",
+      "name": "Nihongo Vocabulary",
+      "description": "Practice with 3000 common Japanese Words",
+      "icon": "assets/nihongovocabulary.svg",
+      "color": "#B1CCF2",
       "iconColor": "#ffedc57a"
     }
   ]

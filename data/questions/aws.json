@@ -1,0 +1,720 @@
+[
+    {
+        "QuestionID": "Q1",
+        "Subject": "AWS",
+        "Difficulty": "Easy",
+        "QuestionType": "Multiple Choice",
+        "Question": "A company wants to create a learning application for students. The learning application must give students the option to choose a button to have the text read out loud to them. Which AWS machine learning service will meet this requirement?",
+        "Answer": "a",
+        "Options": {
+            "a": "Amazon Polly",
+            "b": "Amazon Lex",
+            "c": "Amazon Transcribe",
+            "d": "Amazon Rekognition"
+        }
+    },
+    {
+        "QuestionID": "Q2",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "Multiple Answer",
+        "Question": "Which credential components are required to gain programmatic access to an AWS account? (Select TWO.)",
+        "Answer": [
+            "a",
+            "b"
+        ],
+        "Options": {
+            "a": "Secret access key",
+            "b": "Access key ID",
+            "c": "IAM username",
+            "d": "Root password"
+        }
+    },
+    {
+        "QuestionID": "Q3",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "Multiple Choice",
+        "Question": "A user deploys an Amazon RDS DB instance in multiple Availability Zones. This strategy involves which pillar of the AWS Well-Architected Framework?",
+        "Answer": "a",
+        "Options": {
+            "a": "Reliability",
+            "b": "Performance Efficiency",
+            "c": "Security",
+            "d": "Cost Optimization"
+        }
+    },
+    {
+        "QuestionID": "Q4",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "True/False",
+        "Question": "Site-to-Site VPN creates an encrypted network path between your on-premises network and your AWS Cloud network.",
+        "Answer": "True"
+    },
+    {
+        "QuestionID": "Q5",
+        "Subject": "AWS",
+        "Difficulty": "Hard",
+        "QuestionType": "Multiple Answer",
+        "Question": "How does AWS charge for AWS Lambda usage once the free tier has been exceeded? (Select TWO.)",
+        "Answer": [
+            "a",
+            "b"
+        ],
+        "Options": {
+            "a": "Lambda charges are dependent on the amount of time it takes to run the code",
+            "b": "Lambda charges are dependent on the number of requests for your Lambda functions",
+            "c": "Lambda charges are based on the size of your code",
+            "d": "Lambda charges are based on the programming language used"
+        }
+    },
+    {
+        "QuestionID": "Q6",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which AWS service can monitor and receive alerts about AWS Management Console sign-in events that involve the AWS account root user?",
+        "Answer": "a",
+        "Options": {
+            "a": "Amazon CloudWatch",
+            "b": "AWS Config",
+            "c": "AWS Shield",
+            "d": "Amazon GuardDuty"
+        }
+    },
+    {
+        "QuestionID": "Q7",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "Multiple Answer",
+        "Question": "What are the advantages of deploying an application with Amazon EC2 instances in multiple Availability Zones? (Select TWO.)",
+        "Answer": [
+            "a",
+            "b"
+        ],
+        "Options": {
+            "a": "Preventing a single point of failure",
+            "b": "Increasing the availability of the application",
+            "c": "Reducing storage costs",
+            "d": "Eliminating the need for backups"
+        }
+    },
+    {
+        "QuestionID": "Q8",
+        "Subject": "AWS",
+        "Difficulty": "Easy",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which AWS service will achieve lower latency and high transfer speeds for a static website hosted on Amazon S3?",
+        "Answer": "a",
+        "Options": {
+            "a": "Amazon CloudFront",
+            "b": "AWS Global Accelerator",
+            "c": "Amazon Route 53",
+            "d": "AWS Direct Connect"
+        }
+    },
+    {
+        "QuestionID": "Q9",
+        "Subject": "AWS",
+        "Difficulty": "Easy",
+        "QuestionType": "Multiple Choice",
+        "Question": "What is the MINIMUM AWS Support plan that provides technical support through phone calls?",
+        "Answer": "a",
+        "Options": {
+            "a": "Business",
+            "b": "Developer",
+            "c": "Enterprise",
+            "d": "Basic"
+        }
+    },
+    {
+        "QuestionID": "Q10",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which AWS service allows customers to purchase unused Amazon EC2 capacity at an often discounted rate?",
+        "Answer": "a",
+        "Options": {
+            "a": "Spot Instances",
+            "b": "Reserved Instances",
+            "c": "Dedicated Hosts",
+            "d": "On-Demand Instances"
+        }
+    },
+    {
+        "QuestionID": "Q11",
+        "Subject": "AWS",
+        "Difficulty": "Hard",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which AWS service provides centralized governance and billing for multiple AWS accounts?",
+        "Answer": "a",
+        "Options": {
+            "a": "AWS Organizations",
+            "b": "AWS Control Tower",
+            "c": "AWS Config",
+            "d": "AWS Budgets"
+        }
+    },
+    {
+        "QuestionID": "Q12",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which AWS service identifies security groups that allow unrestricted access to a user's AWS resources?",
+        "Answer": "a",
+        "Options": {
+            "a": "AWS Trusted Advisor",
+            "b": "AWS Shield",
+            "c": "Amazon Inspector",
+            "d": "AWS GuardDuty"
+        }
+    },
+    {
+        "QuestionID": "Q13",
+        "Subject": "AWS",
+        "Difficulty": "Easy",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which AWS service is a relational database that records new customer orders from a website?",
+        "Answer": "a",
+        "Options": {
+            "a": "Amazon Aurora",
+            "b": "Amazon DynamoDB",
+            "c": "Amazon Redshift",
+            "d": "Amazon Neptune"
+        }
+    },
+    {
+        "QuestionID": "Q14",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which AWS service can automatically discover, classify, and protect sensitive data stored in Amazon S3?",
+        "Answer": "a",
+        "Options": {
+            "a": "Amazon Macie",
+            "b": "AWS Shield",
+            "c": "AWS WAF",
+            "d": "Amazon GuardDuty"
+        }
+    },
+    {
+        "QuestionID": "Q15",
+        "Subject": "AWS",
+        "Difficulty": "Easy",
+        "QuestionType": "Multiple Answer",
+        "Question": "Which of the following are characteristics of Amazon S3? (Select TWO.)",
+        "Answer": [
+            "a",
+            "b"
+        ],
+        "Options": {
+            "a": "An Object Store",
+            "b": "A durable storage system",
+            "c": "A block storage service",
+            "d": "A file system service"
+        }
+    },
+    {
+        "QuestionID": "Q16",
+        "Subject": "AWS",
+        "Difficulty": "Easy",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which AWS service is used to store and manage developers' source code?",
+        "Answer": "a",
+        "Options": {
+            "a": "AWS CodeCommit",
+            "b": "AWS CodeBuild",
+            "c": "AWS CodeDeploy",
+            "d": "AWS CodePipeline"
+        }
+    },
+    {
+        "QuestionID": "Q17",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "Multiple Answer",
+        "Question": "What are benefits of using the AWS Cloud for companies with customers in many countries around the world? (Select TWO.)",
+        "Answer": [
+            "a",
+            "b"
+        ],
+        "Options": {
+            "a": "Amazon CloudFront has multiple edge locations around the world to reduce latency",
+            "b": "Companies can deploy applications in multiple AWS regions to reduce latency",
+            "c": "AWS provides free internet bandwidth globally",
+            "d": "AWS automatically translates content into local languages"
+        }
+    },
+    {
+        "QuestionID": "Q18",
+        "Subject": "AWS",
+        "Difficulty": "Hard",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which service should a company use to migrate an on-premises Linux-based server with an Oracle database to an Amazon EC2 instance?",
+        "Answer": "a",
+        "Options": {
+            "a": "AWS Application Migration Service (AWS MGN)",
+            "b": "AWS Database Migration Service",
+            "c": "AWS Server Migration Service",
+            "d": "AWS Snowball"
+        }
+    },
+    {
+        "QuestionID": "Q19",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which AWS service provides a consistent and private connection from an on-premises data center to the AWS Cloud?",
+        "Answer": "a",
+        "Options": {
+            "a": "Amazon Direct Connect",
+            "b": "AWS VPN",
+            "c": "AWS Transit Gateway",
+            "d": "Amazon VPC"
+        }
+    },
+    {
+        "QuestionID": "Q20",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "Multiple Answer",
+        "Question": "Which tasks are the customer's responsibility according to the AWS shared responsibility model? (Select TWO.)",
+        "Answer": [
+            "a",
+            "b"
+        ],
+        "Options": {
+            "a": "Configure IAM users according to the principle of least privilege",
+            "b": "Configure an Amazon S3 bucket to allow public access",
+            "c": "Maintain physical security of data centers",
+            "d": "Patch the hypervisor"
+        }
+    },
+    {
+        "QuestionID": "Q21",
+        "Subject": "AWS",
+        "Difficulty": "Easy",
+        "QuestionType": "Multiple Choice",
+        "Question": "What is another name for on-premises deployment?",
+        "Answer": "a",
+        "Options": {
+            "a": "Private Cloud Deployment",
+            "b": "Public Cloud Deployment",
+            "c": "Hybrid Cloud Deployment",
+            "d": "Community Cloud Deployment"
+        }
+    },
+    {
+        "QuestionID": "Q22",
+        "Subject": "AWS",
+        "Difficulty": "Easy",
+        "QuestionType": "Multiple Choice",
+        "Question": "How does the scale of cloud computing help you to save costs?",
+        "Answer": "a",
+        "Options": {
+            "a": "The aggregated cloud usage from a large number of customers results in lower pay-as-you-go prices",
+            "b": "AWS provides free services to all customers",
+            "c": "Cloud computing eliminates the need for all IT staff",
+            "d": "AWS automatically optimizes all customer workloads"
+        }
+    },
+    {
+        "QuestionID": "Q23",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which Amazon EC2 instance type is suitable for data warehousing applications?",
+        "Answer": "c",
+        "Options": {
+            "a": "Compute Optimized",
+            "b": "Memory Optimized",
+            "c": "Storage Optimized",
+            "d": "General Purpose"
+        }
+    },
+    {
+        "QuestionID": "Q24",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which Amazon EC2 instance type balances compute, memory, and networking resources?",
+        "Answer": "d",
+        "Options": {
+            "a": "Compute Optimized",
+            "b": "Memory Optimized",
+            "c": "Accelerated Computing",
+            "d": "General Purpose"
+        }
+    },
+    {
+        "QuestionID": "Q25",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which Amazon EC2 instance type is ideal for high-performance databases?",
+        "Answer": "b",
+        "Options": {
+            "a": "Compute Optimized",
+            "b": "Memory Optimized",
+            "c": "Storage Optimized",
+            "d": "General Purpose"
+        }
+    },
+    {
+        "QuestionID": "Q26",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which AWS service provides a fully managed NoSQL database with single-digit millisecond latency?",
+        "Answer": "b",
+        "Options": {
+            "a": "Amazon RDS",
+            "b": "Amazon DynamoDB",
+            "c": "Amazon Redshift",
+            "d": "Amazon ElastiCache"
+        }
+    },
+    {
+        "QuestionID": "Q27",
+        "Subject": "AWS",
+        "Difficulty": "Hard",
+        "QuestionType": "Multiple Answer",
+        "Question": "Which of the following are features of AWS Lambda? (Select TWO.)",
+        "Answer": [
+            "a",
+            "c"
+        ],
+        "Options": {
+            "a": "Automatic scaling",
+            "b": "Persistent storage",
+            "c": "Pay-per-use pricing",
+            "d": "Fixed provisioning"
+        }
+    },
+    {
+        "QuestionID": "Q28",
+        "Subject": "AWS",
+        "Difficulty": "Easy",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which AWS service is used to create and manage user identities and permissions?",
+        "Answer": "a",
+        "Options": {
+            "a": "AWS IAM",
+            "b": "AWS KMS",
+            "c": "AWS STS",
+            "d": "AWS Cognito"
+        }
+    },
+    {
+        "QuestionID": "Q29",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "True/False",
+        "Question": "AWS Shield Standard provides protection against DDoS attacks for all AWS customers at no additional cost.",
+        "Answer": "True"
+    },
+    {
+        "QuestionID": "Q30",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which AWS service is best suited for running containerized applications?",
+        "Answer": "c",
+        "Options": {
+            "a": "AWS Lambda",
+            "b": "AWS Elastic Beanstalk",
+            "c": "Amazon ECS",
+            "d": "AWS Batch"
+        }
+    },
+    {
+        "QuestionID": "Q31",
+        "Subject": "AWS",
+        "Difficulty": "Hard",
+        "QuestionType": "Multiple Answer",
+        "Question": "Which of the following are benefits of using Amazon S3 Glacier? (Select TWO.)",
+        "Answer": [
+            "a",
+            "d"
+        ],
+        "Options": {
+            "a": "Low-cost storage for archival data",
+            "b": "Real-time data access",
+            "c": "High-performance computing",
+            "d": "Long-term data retention"
+        }
+    },
+    {
+        "QuestionID": "Q32",
+        "Subject": "AWS",
+        "Difficulty": "Easy",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which AWS service provides a virtual network isolated from other AWS customers?",
+        "Answer": "b",
+        "Options": {
+            "a": "AWS Direct Connect",
+            "b": "Amazon VPC",
+            "c": "AWS VPN",
+            "d": "Amazon Route 53"
+        }
+    },
+    {
+        "QuestionID": "Q33",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which AWS service helps analyze log data and monitor system performance?",
+        "Answer": "a",
+        "Options": {
+            "a": "Amazon CloudWatch",
+            "b": "AWS CloudTrail",
+            "c": "AWS X-Ray",
+            "d": "AWS Config"
+        }
+    },
+    {
+        "QuestionID": "Q34",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which AWS feature allows you to set up rules to automatically respond to changes in your AWS resources?",
+        "Answer": "c",
+        "Options": {
+            "a": "AWS Lambda",
+            "b": "Amazon EventBridge",
+            "c": "AWS Config Rules",
+            "d": "AWS Systems Manager"
+        }
+    },
+    {
+        "QuestionID": "Q35",
+        "Subject": "AWS",
+        "Difficulty": "Hard",
+        "QuestionType": "Multiple Answer",
+        "Question": "Which of the following are characteristics of AWS Fargate? (Select TWO.)",
+        "Answer": [
+            "b",
+            "d"
+        ],
+        "Options": {
+            "a": "Requires manual scaling",
+            "b": "Serverless compute for containers",
+            "c": "Fixed pricing model",
+            "d": "No need to manage EC2 instances"
+        }
+    },
+    {
+        "QuestionID": "Q36",
+        "Subject": "AWS",
+        "Difficulty": "Easy",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which AWS service provides a fully managed message queuing service?",
+        "Answer": "a",
+        "Options": {
+            "a": "Amazon SQS",
+            "b": "Amazon Kinesis",
+            "c": "Amazon MQ",
+            "d": "Amazon SNS"
+        }
+    },
+    {
+        "QuestionID": "Q37",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which AWS service is used to migrate large amounts of data to AWS using physical storage devices?",
+        "Answer": "d",
+        "Options": {
+            "a": "AWS DMS",
+            "b": "AWS VPN",
+            "c": "AWS Direct Connect",
+            "d": "AWS Snowball"
+        }
+    },
+    {
+        "QuestionID": "Q38",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which AWS service provides a managed Kubernetes service?",
+        "Answer": "b",
+        "Options": {
+            "a": "Amazon ECS",
+            "b": "Amazon EKS",
+            "c": "AWS Fargate",
+            "d": "AWS Lambda"
+        }
+    },
+    {
+        "QuestionID": "Q39",
+        "Subject": "AWS",
+        "Difficulty": "Hard",
+        "QuestionType": "Multiple Answer",
+        "Question": "Which of the following are use cases for Amazon API Gateway? (Select TWO.)",
+        "Answer": [
+            "a",
+            "c"
+        ],
+        "Options": {
+            "a": "Creating RESTful APIs",
+            "b": "Storing relational data",
+            "c": "Handling API authentication",
+            "d": "Running batch processing jobs"
+        }
+    },
+    {
+        "QuestionID": "Q40",
+        "Subject": "AWS",
+        "Difficulty": "Easy",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which AWS service provides a fully managed data warehouse?",
+        "Answer": "c",
+        "Options": {
+            "a": "Amazon DynamoDB",
+            "b": "Amazon RDS",
+            "c": "Amazon Redshift",
+            "d": "Amazon Aurora"
+        }
+    },
+    {
+        "QuestionID": "Q41",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which AWS service provides a managed Redis or Memcached-compatible in-memory data store?",
+        "Answer": "d",
+        "Options": {
+            "a": "Amazon RDS",
+            "b": "Amazon Neptune",
+            "c": "Amazon DocumentDB",
+            "d": "Amazon ElastiCache"
+        }
+    },
+    {
+        "QuestionID": "Q42",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "True/False",
+        "Question": "AWS WAF (Web Application Firewall) can be deployed on Amazon CloudFront distributions.",
+        "Answer": "True"
+    },
+    {
+        "QuestionID": "Q43",
+        "Subject": "AWS",
+        "Difficulty": "Hard",
+        "QuestionType": "Multiple Answer",
+        "Question": "Which of the following are pillars of the AWS Well-Architected Framework? (Select TWO.)",
+        "Answer": [
+            "a",
+            "b"
+        ],
+        "Options": {
+            "a": "Operational Excellence",
+            "b": "Security",
+            "c": "Low Latency",
+            "d": "Fixed Pricing"
+        }
+    },
+    {
+        "QuestionID": "Q44",
+        "Subject": "AWS",
+        "Difficulty": "Easy",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which AWS service provides DNS management and domain registration?",
+        "Answer": "a",
+        "Options": {
+            "a": "Amazon Route 53",
+            "b": "AWS CloudFront",
+            "c": "Amazon VPC",
+            "d": "AWS Direct Connect"
+        }
+    },
+    {
+        "QuestionID": "Q45",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which AWS service provides a fully managed service for deploying and scaling web applications?",
+        "Answer": "b",
+        "Options": {
+            "a": "AWS Lambda",
+            "b": "AWS Elastic Beanstalk",
+            "c": "Amazon ECS",
+            "d": "AWS Fargate"
+        }
+    },
+    {
+        "QuestionID": "Q46",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which AWS service provides a managed Apache Kafka service for real-time data streaming?",
+        "Answer": "c",
+        "Options": {
+            "a": "Amazon Kinesis",
+            "b": "Amazon SQS",
+            "c": "Amazon MSK",
+            "d": "Amazon SNS"
+        }
+    },
+    {
+        "QuestionID": "Q47",
+        "Subject": "AWS",
+        "Difficulty": "Hard",
+        "QuestionType": "Multiple Answer",
+        "Question": "Which of the following are features of Amazon RDS? (Select TWO.)",
+        "Answer": [
+            "a",
+            "d"
+        ],
+        "Options": {
+            "a": "Automated backups",
+            "b": "NoSQL database engine",
+            "c": "Manual scaling only",
+            "d": "Multi-AZ deployments"
+        }
+    },
+    {
+        "QuestionID": "Q48",
+        "Subject": "AWS",
+        "Difficulty": "Easy",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which AWS service provides a fully managed service for running Apache Spark workloads?",
+        "Answer": "a",
+        "Options": {
+            "a": "Amazon EMR",
+            "b": "Amazon Athena",
+            "c": "Amazon Redshift",
+            "d": "AWS Glue"
+        }
+    },
+    {
+        "QuestionID": "Q49",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which AWS service provides a fully managed service for running serverless SQL queries against data in S3?",
+        "Answer": "b",
+        "Options": {
+            "a": "Amazon Redshift",
+            "b": "Amazon Athena",
+            "c": "Amazon RDS",
+            "d": "Amazon DynamoDB"
+        }
+    },
+    {
+        "QuestionID": "Q50",
+        "Subject": "AWS",
+        "Difficulty": "Medium",
+        "QuestionType": "Multiple Choice",
+        "Question": "Which AWS service provides a fully managed service for running Microsoft Active Directory in the cloud?",
+        "Answer": "d",
+        "Options": {
+            "a": "AWS IAM",
+            "b": "AWS Cognito",
+            "c": "AWS SSO",
+            "d": "AWS Directory Service"
+        }
+    }
+]
