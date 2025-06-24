@@ -1,30 +1,37 @@
 [
-    {
-      "name": "Science",
-      "description": "Explore the laws of nature",
-      "icon": "assets/science.svg",
-      "color": "#C0B6DB",
-      "iconColor": "gray-light"
-    },
-    {
-      "name": "AWS",
-      "description": "AWS Cloud Practitioner Practice Exam",
-      "icon": "assets/aws.svg",
-      "color": "#FEED80",
-      "iconColor": "#ffedc57a"
-    },
-    {
-      "name": "General Trivia",
-      "description": "Test your knowledge for everything under the sun",
-      "icon": "assets/generaltrivia.svg",
-      "color": "#BEDE8B",
-      "iconColor": "gray-light"
-    },
-    {
-      "name": "Nihongo Vocabulary",
-      "description": "Practice with 3000 common Japanese Words",
-      "icon": "assets/nihongovocabulary.svg",
-      "color": "#B1CCF2",
-      "iconColor": "#ffedc57a"
-    }
-  ]
+  {
+    "name": "Science",
+    "description": "Explore the laws of nature",
+    "icon": "assets/science.svg",
+    "color": "#C0B6DB",
+    "iconColor": "gray-light"
+  },
+  {
+    "name": "AWS",
+    "description": "AWS Cloud Practitioner Practice Exam",
+    "icon": "assets/aws.svg",
+    "color": "#FEED80",
+    "iconColor": "#ffedc57a"
+  },
+  {
+    "name": "General Trivia",
+    "description": "Test your knowledge for everything under the sun",
+    "icon": "assets/generaltrivia.svg",
+    "color": "#BEDE8B",
+    "iconColor": "gray-light"
+  },
+  {
+    "name": "Nihongo Vocabulary",
+    "description": "Practice with 3000 common Japanese Words",
+    "icon": "assets/nihongovocabulary.svg",
+    "color": "#B1CCF2",
+    "iconColor": "#ffedc57a"
+  },
+  {
+    "name": "Advanced English",
+    "description": "C2 English proficiency test by Corpus of Contemporary American English",
+    "icon": "assets/advancedenglish.svg",
+    "color": "#f48fb1",
+    "iconColor": "#ffedc57a"
+  }
+]
