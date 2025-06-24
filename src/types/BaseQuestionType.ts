@@ -4,7 +4,7 @@ export interface BaseQuestionType {
     Difficulty: string,
     QuestionType: QuestionTypes,
     Question: string,
-    Answer: string,
+    Answer: string | string[],
     Options?: Options
 }
 

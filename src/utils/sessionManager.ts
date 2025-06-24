@@ -16,7 +16,6 @@ export const isSessionValid = () => {
     if (!encoded) return false;
 
     const now = Date.now();
-    // console.log(decodeSession(encoded));
     return now - decodeSession(encoded) < SESSION_DURATION;
 };
 

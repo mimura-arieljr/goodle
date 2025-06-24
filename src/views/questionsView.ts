@@ -3,13 +3,16 @@ import { prepareQuestionSet } from "../utils/questionsManager.js";
 import { isAnswerValid } from "../utils/answersManager.js";
 import { startCountdownTimer } from "../utils/timerManager.js";
 import { resultsView } from "./resultsView.js";
+import { Configuration } from "../common/config.js";
+
+const { ApplicationConfig, BackgroundColors, BorderColors } = Configuration;
+const { MULTIPLE_CHOICE_BG_COLOR, MULTIPLE_CHOICE_SELECTED_BG_COLOR, MULTIPLE_CHOICE_CORRECT_BG_COLOR } = BackgroundColors;
+const { CORRECT_BORDER_COLOR, INCORRECT_BORDER_COLOR } = BorderColors;
 
 const answerInput = document.getElementById("answer-input") as HTMLInputElement;
-const correctAnswer = document.getElementById("correct-answer-text") as HTMLElement;
+const correctAnswerText = document.getElementById("correct-answer-text") as HTMLElement;
 const questionTextEl = document.getElementById("question-text") as HTMLElement;
 const choicesContainer = document.getElementById("choices-container") as HTMLElement;
-const CORRECT_BORDER_COLOR = "border-green";
-const INCORRECT_BORDER_COLOR = "border-red";
 
 export async function questionsView(subjectsPage: HTMLElement, questionsPage: HTMLElement, subject: string) {
     const backBtn = document.getElementById("questions-back-btn") as HTMLButtonElement;
@@ -24,7 +27,7 @@ export async function questionsView(subjectsPage: HTMLElement, questionsPage: HT
     });
 
     // Use onclick instead of eventListener
-    // Avoid listener getting stacked multiple times on the same button. 
+    // To avoid listener getting stacked multiple times on the same button. 
     // This causes handleAnswerSubmission() to be called more than once — even with outdated state. 
     submitBtn.onclick = handleAnswerSubmission;
 
@@ -34,25 +37,32 @@ export async function questionsView(subjectsPage: HTMLElement, questionsPage: HT
 
     // Handle answer submit
     function handleAnswerSubmission() {
+        const question = questions[currentQuestionIndex];
+        const { Answer: correctAnswer, QuestionType: questionType } = question;
         const userAnswer = answerInput.value;
-        const isValid = isAnswerValid(userAnswer, questions[currentQuestionIndex]);
+        const isValid = isAnswerValid(userAnswer, question);
+        const isMultipleChoice = questionType === QuestionTypes.MULT_CHOICE || questionType === QuestionTypes.MULT_ANSWER;
 
-        handleAnswerFeedback(isValid);
+        if (isMultipleChoice) {
+            handleMultChoiceAnswerFeedback(isValid, correctAnswer);
+        } else {
+            handleAnswerFeedback(isValid);
+        }
 
         if (!isValid) {
-            correctAnswer.classList.remove("invisible");
-            correctAnswer.innerText = `Correct Answer: ${questions[currentQuestionIndex].Answer}`;
+            correctAnswerText.classList.remove("invisible");
+            correctAnswerText.innerText = `Correct Answer: ${correctAnswer}`;
         }
 
         submitBtn.disabled = true;
 
         setTimeout(() => {
             answerInput.classList.remove(INCORRECT_BORDER_COLOR, CORRECT_BORDER_COLOR);
-            correctAnswer.classList.add("invisible");
+            correctAnswerText.classList.add("invisible");
             submitBtn.disabled = false;
 
             moveToNextQuestion();
-        }, 2000);
+        }, ApplicationConfig.DELAY_BEFORE_NEXT_QUESTION);
     }
 
     function moveToNextQuestion() {
@@ -95,13 +105,33 @@ export async function questionsView(subjectsPage: HTMLElement, questionsPage: HT
         }
     }
 
+    function handleMultChoiceAnswerFeedback(isCorrect: boolean, correctAnswers: string[] | string): void {
+        if (!isCorrect) return
+        if (Array.isArray(correctAnswers)) {
+            const correctAnswer = correctAnswers.map(a => a.trim().toUpperCase()).sort();
+            correctAnswer.forEach(a => {
+                const choiceEl = document.getElementById(`choice-${a}`);
+                if (choiceEl) {
+                    choiceEl.classList.remove(MULTIPLE_CHOICE_SELECTED_BG_COLOR);
+                    choiceEl.classList.add(MULTIPLE_CHOICE_CORRECT_BG_COLOR);
+                }
+            });
+        } else {
+            const uppercaseAnswer = correctAnswers.trim().toUpperCase();
+            const choiceEl = document.getElementById(`choice-${uppercaseAnswer}`);
+            choiceEl!.classList.remove(MULTIPLE_CHOICE_SELECTED_BG_COLOR);
+            choiceEl!.classList.add(MULTIPLE_CHOICE_CORRECT_BG_COLOR);
+        }
+        score++;
+    }
+
     function handleMultipleAnswersQuestion(q: BaseQuestionType): void {
         Object.entries(q.Options!).forEach(([key, value]) => {
             const choiceEl = createChoiceButtonEl(key, value);
             choiceEl.addEventListener("click", () => {
-                const wasSelected = choiceEl.classList.contains("bg-orange-300");
-                choiceEl.classList.toggle("bg-orange-300", !wasSelected);
-                choiceEl.classList.toggle("bg-white", wasSelected);
+                const wasSelected = choiceEl.classList.contains(MULTIPLE_CHOICE_SELECTED_BG_COLOR);
+                choiceEl.classList.toggle(MULTIPLE_CHOICE_SELECTED_BG_COLOR, !wasSelected);
+                choiceEl.classList.toggle(MULTIPLE_CHOICE_BG_COLOR, wasSelected);
 
                 const answers = answerInput.value.split(',').map(a => a.trim()).filter(Boolean);
                 if (!wasSelected) {
@@ -112,7 +142,6 @@ export async function questionsView(subjectsPage: HTMLElement, questionsPage: HT
                 }
                 answerInput.value = answers.join(',');
             });
-
             choicesContainer.appendChild(choiceEl);
         });
     }
@@ -122,22 +151,23 @@ export async function questionsView(subjectsPage: HTMLElement, questionsPage: HT
             const choiceEl = createChoiceButtonEl(key, value);
             choiceEl.addEventListener("click", () => {
                 Array.from(choicesContainer.children).forEach(btn => {
-                    btn.classList.remove("bg-orange-300");
-                    btn.classList.add("bg-white");
+                    btn.classList.remove(MULTIPLE_CHOICE_SELECTED_BG_COLOR);
+                    btn.classList.add(MULTIPLE_CHOICE_BG_COLOR);
                 });
-                choiceEl.classList.add("bg-orange-300");
-                choiceEl.classList.remove("bg-white");
+                choiceEl.classList.add(MULTIPLE_CHOICE_SELECTED_BG_COLOR);
+                choiceEl.classList.remove(MULTIPLE_CHOICE_BG_COLOR);
                 answerInput.value = key;
             });
-
             choicesContainer.appendChild(choiceEl);
         });
     }
 
     function createChoiceButtonEl(key: string, value: string): HTMLButtonElement {
         const choiceEl = document.createElement("button");
-        choiceEl.className = "choice-btn py-2 px-4 mb-2 text-black bg-white rounded hover:bg-orange-200 transition font-anonymouspro w-full text-left";
-        choiceEl.innerText = `${key.toUpperCase()}: ${value}`;
+        const uppercaseKey = key.toUpperCase();
+        choiceEl.className = "choice-btn py-2 px-4 mb-2 text-black bg-white rounded border hover:bg-orange-200 transition font-anonymouspro w-full text-left";
+        choiceEl.id = `choice-${uppercaseKey}`;
+        choiceEl.innerText = `${uppercaseKey}: ${value}`;
         return choiceEl;
     };
 
