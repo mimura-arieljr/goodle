@@ -1,7 +1,7 @@
 [
   {
     "name": "Science",
-    "description": "Explore the laws of nature",
+    "description": "Explore The Laws of Nature",
     "icon": "assets/science.svg",
     "color": "#C0B6DB",
     "iconColor": "gray-light"
@@ -15,21 +15,21 @@
   },
   {
     "name": "General Trivia",
-    "description": "Test your knowledge for everything under the sun",
+    "description": "Anything Under The Sun",
     "icon": "assets/generaltrivia.svg",
     "color": "#BEDE8B",
     "iconColor": "gray-light"
   },
   {
     "name": "Nihongo Vocabulary",
-    "description": "Practice with 3000 common Japanese Words",
+    "description": "Practice with 3000 Common Japanese Words",
     "icon": "assets/nihongovocabulary.svg",
     "color": "#B1CCF2",
     "iconColor": "#ffedc57a"
   },
   {
     "name": "Advanced English",
-    "description": "C2 English proficiency test by Corpus of Contemporary American English",
+    "description": "C1 - C2 English Proficiency Test by Corpus of Contemporary American English",
     "icon": "assets/advancedenglish.svg",
     "color": "#f48fb1",
     "iconColor": "#ffedc57a"

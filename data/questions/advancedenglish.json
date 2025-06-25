@@ -1748,5 +1748,1111 @@
       "c": "booming",
       "d": "frustrating"
     }
+  },
+  {
+    "QuestionID": "Q126",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Mary was .... when Jim told her that she was stupid.",
+    "Answer": "d",
+    "Options": {
+      "a": "sympathetic",
+      "b": "relieved",
+      "c": "boastful",
+      "d": "offended"
+    }
+  },
+  {
+    "QuestionID": "Q127",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "My father likes to take a .... after dinner. He usually sleeps for 45 minutes.",
+    "Answer": "b",
+    "Options": {
+      "a": "role",
+      "b": "nap",
+      "c": "swipe",
+      "d": "loan"
+    }
+  },
+  {
+    "QuestionID": "Q128",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "A .... of Japanese people is that they all eat rice, do karate, and sing karaoke.",
+    "Answer": "a",
+    "Options": {
+      "a": "stereotype",
+      "b": "burden",
+      "c": "itinerary",
+      "d": "scandal"
+    }
+  },
+  {
+    "QuestionID": "Q129",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Mike got hit in the arm with a baseball. Now he has a big blue .... on his arm.",
+    "Answer": "d",
+    "Options": {
+      "a": "germ",
+      "b": "fund",
+      "c": "grin",
+      "d": "bruise"
+    }
+  },
+  {
+    "QuestionID": "Q130",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Carol and Jim .... after the big fight they had last night. Today, they are happy together again.",
+    "Answer": "b",
+    "Options": {
+      "a": "showed off",
+      "b": "made up",
+      "c": "figured out",
+      "d": "turned up"
+    }
+  },
+  {
+    "QuestionID": "Q131",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "At the company New Year's party, the boss raised his glass and made a(n) .... to the company's success in the past year.",
+    "Answer": "b",
+    "Options": {
+      "a": "grimace",
+      "b": "toast",
+      "c": "appetizer",
+      "d": "ritual"
+    }
+  },
+  {
+    "QuestionID": "Q132",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "The visiting soccer team had to .... their game because not enough of their players showed up.",
+    "Answer": "b",
+    "Options": {
+      "a": "supervise",
+      "b": "forfeit",
+      "c": "undermine",
+      "d": "transplant"
+    }
+  },
+  {
+    "QuestionID": "Q133",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Renee is .... with her boyfriend. He never wants to spend time with her, so she has decided to leave him.",
+    "Answer": "d",
+    "Options": {
+      "a": "caught up",
+      "b": "broke up",
+      "c": "stood up",
+      "d": "fed up"
+    }
+  },
+  {
+    "QuestionID": "Q134",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "When Mary's children .... , she punishes them by making them stay in their rooms.",
+    "Answer": "c",
+    "Options": {
+      "a": "command",
+      "b": "illustrate",
+      "c": "misbehave",
+      "d": "diminish"
+    }
+  },
+  {
+    "QuestionID": "Q135",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "People who are shy rarely .... conversation with others.",
+    "Answer": "c",
+    "Options": {
+      "a": "expose",
+      "b": "tempt",
+      "c": "initiate",
+      "d": "captivate"
+    }
+  },
+  {
+    "QuestionID": "Q136",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "That mobile phone company is .... for having the worst customer service.",
+    "Answer": "b",
+    "Options": {
+      "a": "trustworthy",
+      "b": "notorious",
+      "c": "acclaimed",
+      "d": "forbidden"
+    }
+  },
+  {
+    "QuestionID": "Q137",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "There has been much .... in the town recently about a high school teacher dating one of his students.",
+    "Answer": "d",
+    "Options": {
+      "a": "greed",
+      "b": "behavior",
+      "c": "funding",
+      "d": "gossip"
+    }
+  },
+  {
+    "QuestionID": "Q138",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "In the week .... to his trip to Paris, Michael studied some useful French expressions.",
+    "Answer": "b",
+    "Options": {
+      "a": "familiar",
+      "b": "prior",
+      "c": "next",
+      "d": "due"
+    }
+  },
+  {
+    "QuestionID": "Q139",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Carlos didn't have money, so he had to .... into the movie theatre. Fortunately, no one noticed him.",
+    "Answer": "b",
+    "Options": {
+      "a": "splash",
+      "b": "sneak",
+      "c": "split",
+      "d": "slide"
+    }
+  },
+  {
+    "QuestionID": "Q140",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Jean's carpet was covered in fur that her cat had .... .",
+    "Answer": "d",
+    "Options": {
+      "a": "spilt",
+      "b": "lain",
+      "c": "leaked",
+      "d": "shed"
+    }
+  },
+  {
+    "QuestionID": "Q141",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "As .... set in, Kerry slowly realized that he didn't have enough energy to get to the top of Mt. Everest.",
+    "Answer": "c",
+    "Options": {
+      "a": "scope",
+      "b": "fragility",
+      "c": "fatigue",
+      "d": "senility"
+    }
+  },
+  {
+    "QuestionID": "Q142",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "When Karl travels in developing countries, he often encounters .... on the street who ask him for money.",
+    "Answer": "c",
+    "Options": {
+      "a": "celebrities",
+      "b": "signals",
+      "c": "beggars",
+      "d": "curbs"
+    }
+  },
+  {
+    "QuestionID": "Q143",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Due to overpopulation, global warming, and other factors, shortages of vital natural resources .... in the not-so-distant future.",
+    "Answer": "c",
+    "Options": {
+      "a": "nullify",
+      "b": "accrue",
+      "c": "loom",
+      "d": "buffer"
+    }
+  },
+  {
+    "QuestionID": "Q144",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Students who wish to borrow a video camera from the college must have written .... from an instructor.",
+    "Answer": "b",
+    "Options": {
+      "a": "priority",
+      "b": "consent",
+      "c": "stimulus",
+      "d": "courtesy"
+    }
+  },
+  {
+    "QuestionID": "Q145",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "The statue fell onto the floor of the hotel lobby. Fortunately, it was still .... .",
+    "Answer": "a",
+    "Options": {
+      "a": "intact",
+      "b": "flavorful",
+      "c": "brutal",
+      "d": "tender"
+    }
+  },
+  {
+    "QuestionID": "Q146",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "The leaders hope that the new trade policy between will .... rapid economic growth in Europe.",
+    "Answer": "b",
+    "Options": {
+      "a": "alleviate",
+      "b": "facilitate",
+      "c": "inaugurate",
+      "d": "exacerbate "
+    }
+  },
+  {
+    "QuestionID": "Q147",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Terry used to be a soldier. He lost a .... in war so now he uses a wheelchair.",
+    "Answer": "c",
+    "Options": {
+      "a": "quart",
+      "b": "tone",
+      "c": "limb",
+      "d": "fossil"
+    }
+  },
+  {
+    "QuestionID": "Q148",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Kate's new sweater .... in the washing machine. Now it's too small to wear.",
+    "Answer": "a",
+    "Options": {
+      "a": "shrunk",
+      "b": "split",
+      "c": "shifted",
+      "d": "spread"
+    }
+  },
+  {
+    "QuestionID": "Q149",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Jose is .... to learning English. He studies at school and in his free time every day.",
+    "Answer": "a",
+    "Options": {
+      "a": "committed",
+      "b": "focused",
+      "c": "allergic",
+      "d": "persuasive"
+    }
+  },
+  {
+    "QuestionID": "Q150",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "My boss .... me the task of cleaning the staff kitchen.",
+    "Answer": "c",
+    "Options": {
+      "a": "labeled",
+      "b": "shipped",
+      "c": "assigned",
+      "d": "recruited"
+    }
+  },
+  {
+    "QuestionID": "Q151",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Cigarettes are .... . Once you start smoking, it is very difficult to quit.",
+    "Answer": "b",
+    "Options": {
+      "a": "operational",
+      "b": "addictive",
+      "c": "maximal",
+      "d": "courteous"
+    }
+  },
+  {
+    "QuestionID": "Q152",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "The high school music teacher .... my confidence in my singing ability. She told me I couldn't sing at all.",
+    "Answer": "c",
+    "Options": {
+      "a": "plucked",
+      "b": "overwhelmed",
+      "c": "shattered",
+      "d": "inflated"
+    }
+  },
+  {
+    "QuestionID": "Q153",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "The most recent scandal has .... protests all over the country. The protesters are calling for new elections to establish a new government.",
+    "Answer": "a",
+    "Options": {
+      "a": "triggered",
+      "b": "measured",
+      "c": "implemented",
+      "d": "ceased"
+    }
+  },
+  {
+    "QuestionID": "Q154",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Foreigners can sometimes face .... when trying to get a job, unfortunately.",
+    "Answer": "a",
+    "Options": {
+      "a": "prejudice",
+      "b": "morality",
+      "c": "justice",
+      "d": "literacy"
+    }
+  },
+  {
+    "QuestionID": "Q155",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "The politician promised to do 'several things in the near future to improve the country.' However, this .... answer did not satisfy anyone.",
+    "Answer": "b",
+    "Options": {
+      "a": "humid",
+      "b": "vague",
+      "c": "reliable",
+      "d": "local"
+    }
+  },
+  {
+    "QuestionID": "Q156",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "One of Mark's teeth is hurting today when he tries to .... food, so he has decided to only have soup for lunch.",
+    "Answer": "b",
+    "Options": {
+      "a": "fold",
+      "b": "chew",
+      "c": "analyse",
+      "d": "install"
+    }
+  },
+  {
+    "QuestionID": "Q157",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "After getting a job offer to work in another city, the man sat down to consider its .... .",
+    "Answer": "d",
+    "Options": {
+      "a": "ups and downs",
+      "b": "back and forth",
+      "c": "black and blues",
+      "d": "pros and cons"
+    }
+  },
+  {
+    "QuestionID": "Q158",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "The baby gorilla .... to his mother's arm. He didn't want her to leave.",
+    "Answer": "b",
+    "Options": {
+      "a": "pertained",
+      "b": "clung",
+      "c": "tailored",
+      "d": "bound"
+    }
+  },
+  {
+    "QuestionID": "Q159",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Takeshi's grandmother passed away 5 years ago. Every August, Takeshi goes to the .... to put candles around her grave.",
+    "Answer": "b",
+    "Options": {
+      "a": "exhibition",
+      "b": "cemetery",
+      "c": "choir",
+      "d": "funeral"
+    }
+  },
+  {
+    "QuestionID": "Q160",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Upon seeing a dead insect in my soup, I lost my .... to eat.",
+    "Answer": "b",
+    "Options": {
+      "a": "selection",
+      "b": "appetite",
+      "c": "creativity",
+      "d": "quality"
+    }
+  },
+  {
+    "QuestionID": "Q161",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "A handful of .... businesspeople were interviewed in this month's issue of Success Magazine.",
+    "Answer": "b",
+    "Options": {
+      "a": "mythical",
+      "b": "prominent",
+      "c": "obsolete",
+      "d": "distracted "
+    }
+  },
+  {
+    "QuestionID": "Q162",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "After Tina broke up with her boyfriend, she became .... . She starting feeling as if life wasn't worth living anymore.",
+    "Answer": "b",
+    "Options": {
+      "a": "fictional",
+      "b": "suicidal",
+      "c": "promotional",
+      "d": "miniature"
+    }
+  },
+  {
+    "QuestionID": "Q163",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "After seeing his students' terrible test scores, the professor realized that most of them were not .... the material very well.",
+    "Answer": "d",
+    "Options": {
+      "a": "consuming",
+      "b": "minding",
+      "c": "promoting",
+      "d": "grasping"
+    }
+  },
+  {
+    "QuestionID": "Q164",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "As a schoolboy, Mike often beat up the weaker kids in his class. He was a(n) .... .",
+    "Answer": "d",
+    "Options": {
+      "a": "saint",
+      "b": "guide",
+      "c": "widow",
+      "d": "bully"
+    }
+  },
+  {
+    "QuestionID": "Q165",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "The judge showed no .... to the 18-year old man. He sentenced him to life in prison.",
+    "Answer": "c",
+    "Options": {
+      "a": "diction",
+      "b": "resolve",
+      "c": "mercy",
+      "d": "torment"
+    }
+  },
+  {
+    "QuestionID": "Q166",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Jim didn't have enough money to purchase the house, so he went to the bank to apply for a .... .",
+    "Answer": "a",
+    "Options": {
+      "a": "mortgage",
+      "b": "appraisal",
+      "c": "constraint",
+      "d": "margin  "
+    }
+  },
+  {
+    "QuestionID": "Q167",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "The survey was designed to be .... , so participants were told not to write their names on it.",
+    "Answer": "a",
+    "Options": {
+      "a": "anonymous",
+      "b": "invisible",
+      "c": "elastic",
+      "d": "crucial"
+    }
+  },
+  {
+    "QuestionID": "Q168",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "The .... of 2010 for Henry was meeting his favorite rock star at a music festival in summer.",
+    "Answer": "b",
+    "Options": {
+      "a": "upbringing",
+      "b": "highlight",
+      "c": "flood",
+      "d": "agenda"
+    }
+  },
+  {
+    "QuestionID": "Q169",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "It's best not to talk to my father in the early morning. He's usually .... until he's had his coffee.",
+    "Answer": "d",
+    "Options": {
+      "a": "lousy",
+      "b": "stubborn",
+      "c": "charismatic",
+      "d": "grumpy"
+    }
+  },
+  {
+    "QuestionID": "Q170",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Jacob has four kids, very little money, and a broken leg. I don't .... him.",
+    "Answer": "c",
+    "Options": {
+      "a": "greet",
+      "b": "afford",
+      "c": "envy",
+      "d": "fulfill"
+    }
+  },
+  {
+    "QuestionID": "Q171",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "At the ABC Fashion outlet, people can buy last year's clothing at a .... of the original price.",
+    "Answer": "c",
+    "Options": {
+      "a": "function",
+      "b": "friction",
+      "c": "fraction",
+      "d": "fiction"
+    }
+  },
+  {
+    "QuestionID": "Q172",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "My wife wanted to have another child, but I didn't. So we .... and bought a dog.",
+    "Answer": "c",
+    "Options": {
+      "a": "filtered",
+      "b": "legislated",
+      "c": "compromised",
+      "d": "executed"
+    }
+  },
+  {
+    "QuestionID": "Q173",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "After getting married, Garth began .... his body. He stopped exercising and eating well.",
+    "Answer": "c",
+    "Options": {
+      "a": "acknowledging",
+      "b": "bolstering",
+      "c": "neglecting",
+      "d": "abolishing"
+    }
+  },
+  {
+    "QuestionID": "Q174",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "From his hidden position behind some trees, John caught a .... of his wife kissing another man.",
+    "Answer": "d",
+    "Options": {
+      "a": "quota",
+      "b": "setback",
+      "c": "motion",
+      "d": "glimpse"
+    }
+  },
+  {
+    "QuestionID": "Q175",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Terrance had a(n) .... yesterday. He realized that the meaning of life is to obtain happiness by making others happy.",
+    "Answer": "b",
+    "Options": {
+      "a": "interference",
+      "b": "revelation",
+      "c": "seizure",
+      "d": "glimmer"
+    }
+  },
+  {
+    "QuestionID": "Q176",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Margaret's boss continues to touch her inappropriately, so she has decided to .... him for sexual harassment.",
+    "Answer": "b",
+    "Options": {
+      "a": "align",
+      "b": "sue",
+      "c": "delegate",
+      "d": "cherish"
+    }
+  },
+  {
+    "QuestionID": "Q177",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Mr. and Mrs. DeClerk are .... . They too rich and proud to care about other people.",
+    "Answer": "d",
+    "Options": {
+      "a": "indifferent",
+      "b": "vibrant",
+      "c": "swift",
+      "d": "arrogant"
+    }
+  },
+  {
+    "QuestionID": "Q178",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "The recent terrorist attack has .... relations between the two neighboring countries.",
+    "Answer": "b",
+    "Options": {
+      "a": "seized",
+      "b": "strained",
+      "c": "augmented",
+      "d": "emphasized"
+    }
+  },
+  {
+    "QuestionID": "Q179",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Jenny is sick. Her doctor told her to rest at home and drink plenty of .... .",
+    "Answer": "b",
+    "Options": {
+      "a": "creams",
+      "b": "fluids",
+      "c": "cocktails",
+      "d": "sauces"
+    }
+  },
+  {
+    "QuestionID": "Q180",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Karen dresses differently. She doesn't want to be part of the .... of girls following the latest fashion trends.",
+    "Answer": "a",
+    "Options": {
+      "a": "herd",
+      "b": "citizenry",
+      "c": "elite",
+      "d": "brink"
+    }
+  },
+  {
+    "QuestionID": "Q181",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Unable to control his .... , Jake threw a punch at Alan.",
+    "Answer": "a",
+    "Options": {
+      "a": "rage",
+      "b": "incline",
+      "c": "wit",
+      "d": "tension"
+    }
+  },
+  {
+    "QuestionID": "Q182",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "The Johnsons' house is old and damaged. Instead of fixing it, they've decided to .... and build a new one on the same land.",
+    "Answer": "b",
+    "Options": {
+      "a": "rip it off",
+      "b": "tear it down",
+      "c": "split it up",
+      "d": "turn it down"
+    }
+  },
+  {
+    "QuestionID": "Q183",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Across the country there was .... support for the Democratic party. In fact, they won a total of 80 percent of the seats.",
+    "Answer": "b",
+    "Options": {
+      "a": "restricted",
+      "b": "widespread",
+      "c": "narrow",
+      "d": "simplified"
+    }
+  },
+  {
+    "QuestionID": "Q184",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "One hundred dollars in 1950 .... to $994 dollars today.",
+    "Answer": "a",
+    "Options": {
+      "a": "equates",
+      "b": "dissolves",
+      "c": "aligns",
+      "d": "expands"
+    }
+  },
+  {
+    "QuestionID": "Q185",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Some tourists are not very .... . They like to plan everything in advance.",
+    "Answer": "b",
+    "Options": {
+      "a": "reliable",
+      "b": "vague",
+      "c": "spontaneous",
+      "d": "obscure"
+    }
+  },
+  {
+    "QuestionID": "Q186",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Takeshi's job with the government is .... .  He'll probably work there until he retires.",
+    "Answer": "c",
+    "Options": {
+      "a": "loyal",
+      "b": "efficient",
+      "c": "stable",
+      "d": "limited"
+    }
+  },
+  {
+    "QuestionID": "Q187",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "John has had .... back pain for the last three years. I don't envy him.",
+    "Answer": "a",
+    "Options": {
+      "a": "grumpy",
+      "b": "blurry",
+      "c": "chronic",
+      "d": "gracious "
+    }
+  },
+  {
+    "QuestionID": "Q188",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "I'm angry because my boss never .... me for the good work I do.",
+    "Answer": "b",
+    "Options": {
+      "a": "regrets",
+      "b": "praises",
+      "c": "polishes",
+      "d": "inclines"
+    }
+  },
+  {
+    "QuestionID": "Q189",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "The police put the criminal in .... and then pushed him into the backseat of their car.",
+    "Answer": "d",
+    "Options": {
+      "a": "storage",
+      "b": "luggage",
+      "c": "slippers",
+      "d": "handcuffs"
+    }
+  },
+  {
+    "QuestionID": "Q190",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Goldman's Bank is based in New York. Last month, the bank opened its first .... in London.",
+    "Answer": "d",
+    "Options": {
+      "a": "volume",
+      "b": "breed",
+      "c": "colony",
+      "d": "branch"
+    }
+  },
+  {
+    "QuestionID": "Q191",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "People are usually .... about the promises that politicians make because politicians often lie.",
+    "Answer": "c",
+    "Options": {
+      "a": "moderate",
+      "b": "authentic",
+      "c": "skeptical",
+      "d": "keen"
+    }
+  },
+  {
+    "QuestionID": "Q192",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Janet was .... by her workload. She had so much to do that she didn't know where to start.",
+    "Answer": "b",
+    "Options": {
+      "a": "outsmarted",
+      "b": "overwhelmed",
+      "c": "ignited",
+      "d": "violated"
+    }
+  },
+  {
+    "QuestionID": "Q193",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Timothy wrote a love letter to Beth. In the letter, he tried to .... the strong feelings he had for her.",
+    "Answer": "b",
+    "Options": {
+      "a": "diminish",
+      "b": "convey",
+      "c": "extract",
+      "d": "disparage"
+    }
+  },
+  {
+    "QuestionID": "Q194",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Peter had a test yesterday to see if he has cancer. He is very .... to get the results.",
+    "Answer": "b",
+    "Options": {
+      "a": "narrow",
+      "b": "anxious",
+      "c": "flexible",
+      "d": "blind"
+    }
+  },
+  {
+    "QuestionID": "Q195",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "George loves talking about his accomplishments. Yesterday, he .... that he could speak four languages fluently.",
+    "Answer": "b",
+    "Options": {
+      "a": "whined",
+      "b": "boasted",
+      "c": "whispered",
+      "d": "denied"
+    }
+  },
+  {
+    "QuestionID": "Q196",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Terry is so .... that he cannot even afford to buy Christmas presents this year.",
+    "Answer": "a",
+    "Options": {
+      "a": "broke",
+      "b": "outgoing",
+      "c": "filthy",
+      "d": "bruised"
+    }
+  },
+  {
+    "QuestionID": "Q197",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Since he had no siblings, Jason was stuck with the .... of caring for his aging parents.",
+    "Answer": "a",
+    "Options": {
+      "a": "burden",
+      "b": "inheritance",
+      "c": "essence",
+      "d": "publication  "
+    }
+  },
+  {
+    "QuestionID": "Q198",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Gabriel was .... to eat more cake after finding a dead fly in his first slice.",
+    "Answer": "c",
+    "Options": {
+      "a": "loyal",
+      "b": "reluctant",
+      "c": "anxious",
+      "d": "allergic"
+    }
+  },
+  {
+    "QuestionID": "Q199",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "The military has planned a .... for June 23rd. On that day, they will take control of the country by force.",
+    "Answer": "b",
+    "Options": {
+      "a": "ballot",
+      "b": "coup",
+      "c": "spree",
+      "d": "vigil "
+    }
+  },
+  {
+    "QuestionID": "Q200",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "Based on the results of this survey, we can .... that most Americans prefer Coca-cola to Pepsi.",
+    "Answer": "a",
+    "Options": {
+      "a": "generalize",
+      "b": "justify",
+      "c": "rectify",
+      "d": "plead"
+    }
+  },
+  {
+    "QuestionID": "Q201",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "We decided to leave the bar because the man-to-woman .... wasn't very good.",
+    "Answer": "c",
+    "Options": {
+      "a": "decimal",
+      "b": "periphery",
+      "c": "ratio",
+      "d": "combo"
+    }
+  },
+  {
+    "QuestionID": "Q202",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "One of Kate's .... is her writing skill. She writes very clearly and professionally.",
+    "Answer": "c",
+    "Options": {
+      "a": "drawbacks",
+      "b": "tones",
+      "c": "assets",
+      "d": "acquaintances"
+    }
+  },
+  {
+    "QuestionID": "Q203",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "If you have many car accidents, your insurance .... will increase.",
+    "Answer": "a",
+    "Options": {
+      "a": "premium",
+      "b": "guarantee",
+      "c": "warantee",
+      "d": "discount"
+    }
+  },
+  {
+    "QuestionID": "Q204",
+    "Subject": "Advanced English Proficiency",
+    "Difficulty": "Medium",
+    "QuestionType": "Multiple Choice",
+    "Question": "After the results of the election were announced, hundreds of angry people took to the streets and started a .... .",
+    "Answer": "b",
+    "Options": {
+      "a": "jury",
+      "b": "riot",
+      "c": "fusion",
+      "d": "mass"
+    }
   }
 ]
