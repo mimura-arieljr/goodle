@@ -35,8 +35,8 @@ export function settingsView(settingsPage: HTMLElement, mainPage: HTMLElement) {
 
         // Control buttons and text UI
         menuButtons.forEach((btn) => btn.disabled = true);
-        settingsBtn.classList.add("hidden");
-        goodleText?.classList.add("opacity-90");
+        menuButtons.forEach((btn) => btn.classList.add("opacity-50"));
+        goodleText?.classList.add("opacity-50");
     });
 
     backBtn.addEventListener("click", () => {
@@ -45,7 +45,7 @@ export function settingsView(settingsPage: HTMLElement, mainPage: HTMLElement) {
         mainPage.classList.add("xs:opacity-100");
 
         menuButtons.forEach((btn) => btn.disabled = false);
-        settingsBtn.classList.remove("hidden");
+        menuButtons.forEach((btn) => btn.classList.remove("opacity-50"));
         goodleText?.classList.remove("opacity-50");
     });
 
