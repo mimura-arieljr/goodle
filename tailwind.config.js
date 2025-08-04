@@ -314,6 +314,7 @@ module.exports = {
       slidein: "slidein 1s ease 300ms",
       spin: 'spin 1s linear infinite',
       colorpulse: 'colorPulse 3s ease-in-out infinite',
+      fillpulse: 'fillPulse 3s ease-in-out infinite',
       pulsate: 'pulsate 1s ease-in-out infinite',
     },
     keyframes: {
@@ -322,6 +323,12 @@ module.exports = {
         '33%': { stroke: '#ef4444' }, /* Red */
         '66%': { stroke: '#3b82f6' }, /* Blue */
         '100%': { stroke: '#8b5cf6' }, /* Purple */
+      },
+      fillPulse: {
+        '0%': { fill: '#8b5cf6' }, /* Purple */
+        '33%': { fill: '#ef4444' }, /* Red */
+        '66%': { fill: '#3b82f6' }, /* Blue */
+        '100%': { fill: '#8b5cf6' }, /* Purple */
       },
       spin: {
         '0%': { transform: 'rotate(0deg)' },

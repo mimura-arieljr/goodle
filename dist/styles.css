@@ -710,6 +710,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -787,12 +791,12 @@ video {
   height: 1.5rem;
 }
 
-.h-64 {
-  height: 16rem;
-}
-
 .h-80 {
   height: 20rem;
+}
+
+.h-\[350px\] {
+  height: 350px;
 }
 
 .h-full {
@@ -831,16 +835,16 @@ video {
   width: 1.5rem;
 }
 
-.w-64 {
-  width: 16rem;
-}
-
 .w-72 {
   width: 18rem;
 }
 
 .w-96 {
   width: 24rem;
+}
+
+.w-\[350px\] {
+  width: 350px;
 }
 
 .w-auto {
@@ -898,26 +902,26 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@keyframes colorPulse {
+@keyframes fillPulse {
   0% {
-    stroke: #8b5cf6;
+    fill: #8b5cf6;
   }
 
   33% {
-    stroke: #ef4444;
+    fill: #ef4444;
   }
 
   66% {
-    stroke: #3b82f6;
+    fill: #3b82f6;
   }
 
   100% {
-    stroke: #8b5cf6;
+    fill: #8b5cf6;
   }
 }
 
-.animate-colorpulse {
-  animation: colorPulse 3s ease-in-out infinite;
+.animate-fillpulse {
+  animation: fillPulse 3s ease-in-out infinite;
 }
 
 @keyframes spin {
@@ -1066,11 +1070,6 @@ video {
 .border-green-700 {
   --tw-border-opacity: 1;
   border-color: rgb(56 142 60 / var(--tw-border-opacity, 1));
-}
-
-.border-orange {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 120 73 / var(--tw-border-opacity, 1));
 }
 
 .border-red-900 {
